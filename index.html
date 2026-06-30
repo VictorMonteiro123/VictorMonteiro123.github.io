@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor Monteiro — Portfólio de Dados &amp; Automação</title>
+
+  <!-- ===========================================================
+       BLOCO DE FONTES
+       Estamos importando duas fontes do Google Fonts:
+       - "Space Grotesk": usada nos títulos, tem cara técnica/mono
+       - "Inter": usada no texto corrido, alta legibilidade em tela
+       =========================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================================================
+       1) VARIÁVEIS DE COR (CSS Custom Properties)
+       Definimos a paleta uma única vez aqui em cima.
+       Sempre que precisarmos de uma cor no resto do CSS,
+       usamos var(--nome) em vez de repetir o código hexadecimal.
+       Isso significa: se um dia você quiser trocar o azul
+       principal, muda em UM lugar só, e o site inteiro atualiza.
+       ========================================================= */
+    :root {
+      --bg: #0B0E14;            /* fundo principal: quase-preto azulado */
+      --bg-panel: #11151D;      /* fundo dos cards, um tom acima do bg */
+      --bg-panel-hover: #161B25;
+      --border: #232938;        /* linhas/divisórias sutis */
+      --text-primary: #E8EAED;  /* texto principal, branco suave */
+      --text-secondary: #8B93A7;/* texto de apoio, cinza azulado */
+      --accent: #4D8FCC;        /* azul principal — mesma família do seu LinkedIn/currículo */
+      --accent-soft: #4D8FCC22;/* mesmo azul, bem transparente, para fundos */
+      --tag-bi: #4D8FCC;
+      --tag-auto: #C99A2E;
+      --tag-dev: #6FBF8B;
+      --radius: 10px;
+    }
+
+    /* Reset básico: navegadores aplicam margens/paddings
+       padrão diferentes em cada elemento. Zeramos tudo
+       pra começar de um terreno neutro e controlado. */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      /* leve textura de grade ao fundo, sutil, remete a dashboard */
+      background-image:
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 64px 64px;
+      background-attachment: fixed;
+      background-color: var(--bg);
+    }
+
+    /* Container central: limita a largura do conteúdo
+       e centraliza na tela, com respiro nas laterais */
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* =========================================================
+       2) CABEÇALHO / HERO
+       ========================================================= */
+    header {
+      padding: 96px 0 64px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .eyebrow::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px var(--accent-soft);
+    }
+
+    h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.15;
+      color: var(--text-primary);
+      margin-bottom: 20px;
+      max-width: 14ch;
+    }
+
+    .hero-desc {
+      font-size: 17px;
+      color: var(--text-secondary);
+      max-width: 56ch;
+      margin-bottom: 32px;
+    }
+
+    .hero-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 11px 20px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #0B0E14;
+      border-color: var(--accent);
+    }
+    .btn-primary:hover { background: #5FA0DD; }
+    .btn-secondary { color: var(--text-primary); }
+    .btn-secondary:hover { border-color: var(--accent); }
+
+    /* =========================================================
+       3) SEÇÕES (Sobre, Projetos, Stack, Contato)
+       ========================================================= */
+    section { padding: 64px 0; border-bottom: 1px solid var(--border); }
+    section:last-of-type { border-bottom: none; }
+
+    .section-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 26px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+
+    .about-text {
+      color: var(--text-secondary);
+      max-width: 64ch;
+      font-size: 16px;
+    }
+    .about-text strong { color: var(--text-primary); font-weight: 600; }
+
+    /* ----- Grid de projetos ----- */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.15s ease, transform 0.15s ease, background 0.15s ease;
+    }
+    .project-card:hover {
+      border-color: var(--accent);
+      background: var(--bg-panel-hover);
+      transform: translateY(-2px);
+    }
+
+    .tag {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 4px 10px;
+      border-radius: 100px;
+      margin-bottom: 16px;
+      width: fit-content;
+      letter-spacing: 0.02em;
+    }
+    .tag-bi { background: #4D8FCC22; color: var(--tag-bi); }
+    .tag-auto { background: #C99A2E22; color: var(--tag-auto); }
+    .tag-dev { background: #6FBF8B22; color: var(--tag-dev); }
+
+    .project-card h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--text-primary);
+    }
+
+    .project-card p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      flex-grow: 1;
+      margin-bottom: 20px;
+    }
+
+    .project-card .card-link {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .project-card .card-link::after { content: '→'; transition: transform 0.15s ease; }
+    .project-card:hover .card-link::after { transform: translateX(3px); }
+
+    /* Card de placeholder, para tecnologias ainda não publicadas */
+    .project-card.placeholder {
+      opacity: 0.5;
+      border-style: dashed;
+    }
+    .project-card.placeholder:hover { transform: none; background: var(--bg-panel); border-color: var(--border); }
+
+    /* ----- Stack técnica ----- */
+    .stack-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .stack-item {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 14px;
+    }
+
+    /* ----- Rodapé / contato ----- */
+    footer {
+      padding: 48px 0 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    footer .contact-links {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+    }
+    footer .contact-links a { color: var(--text-secondary); }
+    footer .contact-links a:hover { color: var(--accent); }
+    footer .copyright {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    /* Telas pequenas: empilha o rodapé */
+    @media (max-width: 600px) {
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+
+    <!-- ===========================================================
+         HEADER / HERO
+         A primeira coisa que a pessoa vê. Precisa responder em
+         3 segundos: quem é, o que faz, e ter um caminho claro
+         pra continuar navegando.
+         =========================================================== -->
+    <header>
+      <div class="eyebrow">Disponível para novas oportunidades</div>
+      <h1>Victor Monteiro<br>transforma dados em decisão.</h1>
+      <p class="hero-desc">
+        Analista de Business Intelligence com atuação em saúde ocupacional, segurança do trabalho
+        e operações de alto volume. Construo dashboards estratégicos em Power BI e automações
+        com n8n e IA generativa.
+      </p>
+      <div class="hero-links">
+        <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/victor-monteiro-6816b5192" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </header>
+
+    <!-- ===========================================================
+         SOBRE
+         =========================================================== -->
+    <section id="sobre">
+      <div class="section-label">// Sobre</div>
+      <h2>Da operação para o dado, e do dado para a decisão</h2>
+      <p class="about-text">
+        Construí minha trajetória dentro de empresas de saúde ocupacional e de uma das maiores
+        operações de dropshipping Brasil-China do país, atuando com <strong>Power BI</strong>,
+        modelagem de dados e estruturação de processos de negócio antes de migrar para uma
+        atuação dedicada em <strong>Business Intelligence</strong>. Hoje, amplio essa entrega
+        construindo automações próprias com <strong>n8n</strong> e IA generativa, e sigo evoluindo
+        tecnicamente em SQL, Python e desenvolvimento backend.
+      </p>
+    </section>
+
+    <!-- ===========================================================
+         PROJETOS
+         Cada .project-card é um projeto. Para adicionar um novo,
+         basta copiar um bloco inteiro de <div class="project-card">
+         até </div> e editar o texto/link de dentro.
+         =========================================================== -->
+    <section id="projetos">
+      <div class="section-label">// Projetos</div>
+      <h2>Portfólio técnico</h2>
+
+      <div class="project-grid">
+
+        <!-- Projeto 1: Riscos Psicossociais -->
+        <div class="project-card">
+          <span class="tag tag-bi">Power BI</span>
+          <h3>Mapeamento de Riscos Psicossociais (NR-01)</h3>
+          <p>
+            Dashboard de diagnóstico, priorização e plano de ação para avaliação de fatores
+            psicossociais no ambiente de trabalho, com motor de recomendação dinâmico por
+            categoria e nível de risco.
+          </p>
+          <a class="card-link" href="https://app.powerbi.com/view?r=SEU_LINK_AQUI" target="_blank" rel="noopener">
+            Ver dashboard interativo
+          </a>
+        </div>
+
+        <!-- Projeto 2: placeholder, ainda não publicado -->
+        <div class="project-card placeholder">
+          <span class="tag tag-bi">Power BI</span>
+          <h3>Dashboard Gerencial de Saúde Ocupacional</h3>
+          <p>
+            Painel executivo de conformidade legal de exames ocupacionais, com lógica de
+            atribuição de causa e indicadores de absenteísmo.
+          </p>
+          <span class="card-link" style="color: var(--text-secondary);">Em breve</span>
+        </div>
+
+        <!-- Projeto 3: placeholder -->
+        <div class="project-card placeholder">
+          <span class="tag tag-bi">Power BI</span>
+          <h3>Dashboard Copa do Mundo 2026</h3>
+          <p>
+            Engenharia de dados em tempo real consumindo API de futebol e automações n8n
+            integradas a um painel de estatísticas ao vivo.
+          </p>
+          <span class="card-link" style="color: var(--text-secondary);">Em breve</span>
+        </div>
+
+        <!-- Projeto 4: placeholder, automação -->
+        <div class="project-card placeholder">
+          <span class="tag tag-auto">Automação</span>
+          <h3>Agente de IA para Atendimento (n8n)</h3>
+          <p>
+            Arquitetura de agente autônomo com Tool Calling, integrando WhatsApp, modelo de
+            linguagem e planilha como banco de dados.
+          </p>
+          <span class="card-link" style="color: var(--text-secondary);">Em breve</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===========================================================
+         STACK TÉCNICA
+         =========================================================== -->
+    <section id="stack">
+      <div class="section-label">// Stack</div>
+      <h2>Ferramentas e tecnologias</h2>
+      <div class="stack-list">
+        <span class="stack-item">Power BI</span>
+        <span class="stack-item">DAX</span>
+        <span class="stack-item">Power Query (M)</span>
+        <span class="stack-item">n8n</span>
+        <span class="stack-item">Excel Avançado</span>
+        <span class="stack-item">IA Generativa</span>
+        <span class="stack-item">SQL (em formação)</span>
+        <span class="stack-item">Python (em formação)</span>
+      </div>
+    </section>
+
+    <!-- ===========================================================
+         RODAPÉ / CONTATO
+         =========================================================== -->
+    <footer>
+      <div class="contact-links">
+        <a href="mailto:vitormont26@gmail.com">E-mail</a>
+        <a href="https://www.linkedin.com/in/victor-monteiro-6816b5192" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="copyright">© 2026 Victor Monteiro</div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
