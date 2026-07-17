@@ -249,6 +249,47 @@
     .project-card.placeholder { opacity: 0.5; border-style: dashed; }
     .project-card.placeholder:hover { transform: none; background: var(--bg-panel); border-color: var(--border); }
 
+    .project-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .project-card-top .tag { margin-bottom: 0; }
+
+    .soon-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 3px 9px;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+
+    .project-card.upcoming { border-style: dashed; }
+    .project-card.upcoming:hover { border-style: solid; }
+
+    .others-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 4px;
+    }
+    .others-list li { border-bottom: 1px solid var(--border); padding-bottom: 16px; }
+    .others-list li:last-child { border-bottom: none; padding-bottom: 0; }
+    .others-list h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .others-list p { font-size: 13.5px; color: var(--text-secondary); }
+
     /* =========================================================
        MODAIS EM FULLSCREEN
        ========================================================= */
@@ -410,8 +451,70 @@
       padding: 8px 14px;
     }
 
+    /* =========================================================
+       SEÇÃO DE CONTATO
+       ========================================================= */
+    #contato { border-bottom: none; padding-bottom: 40px; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      transition: border-color 0.15s ease, transform 0.15s ease, background 0.15s ease;
+    }
+    .contact-card:hover {
+      border-color: var(--accent);
+      background: var(--bg-panel-hover);
+      transform: translateY(-2px);
+    }
+
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+    .contact-icon-mail {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      flex-shrink: 0;
+      background: var(--accent-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+    }
+
+    .contact-card-text { display: flex; flex-direction: column; gap: 2px; }
+    .contact-card-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .contact-card-value { font-size: 15px; font-weight: 600; }
+
+    .contact-signoff {
+      margin-top: 28px;
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
     footer {
-      padding: 48px 0 80px;
+      padding: 32px 0 80px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -447,7 +550,7 @@
         </div>
       </div>
       <div class="hero-photo-container">
-        <img class="hero-photo" src="assets/profile.jpg" alt="Victor Monteiro" style="object-position: center 20%;">
+        <img class="hero-photo" src="assets/perfil.png" alt="Victor Monteiro" style="object-position: center 20%;">
       </div>
     </header>
 
@@ -505,19 +608,56 @@
           <button class="btn-trigger" onclick="openProjectModal('eko')">Visualizar Case Completo</button>
         </div>
 
-        <!-- PROJETOS EM BREVE NA PARTE INFERIOR -->
-        <div class="project-card placeholder">
-          <span class="tag tag-bi">Power BI</span>
-          <h3>Dashboard Gerencial de Saúde Ocupacional</h3>
-          <p>Painel corporativo focado em absenteísmo, controle de exames vencidos/periódicos e indicadores preditivos de sinistralidade corporativa.</p>
-          <span class="card-link" style="color: var(--text-secondary); cursor: default;">Em breve</span>
+        <!-- Projeto 4: Agenda SST Sentinela -->
+        <div class="project-card upcoming">
+          <div class="project-card-top">
+            <span class="tag tag-auto">Automação + BI</span>
+            <span class="soon-pill">Em breve</span>
+          </div>
+          <h3>AgendaSST.AI Sentinela</h3>
+          <p>
+            Watchdog de resiliência para prazos do eSocial: monitora falhas silenciosas no agendamento de exames e alerta gestores antes que o evento S-2220 vire passivo trabalhista.
+          </p>
+          <button class="btn-trigger" onclick="openProjectModal('sentinela')">Visualizar Case Completo</button>
         </div>
 
-        <div class="project-card placeholder">
-          <span class="tag tag-bi">Power BI</span>
-          <h3>Dashboard Copa do Mundo 2026</h3>
-          <p>Pipeline de ingestão de dados em tempo real consumindo APIs abertas de esportes com automação de gatilhos via n8n.</p>
-          <span class="card-link" style="color: var(--text-secondary); cursor: default;">Em breve</span>
+        <!-- Projeto 5: Radar Prata da Casa -->
+        <div class="project-card upcoming">
+          <div class="project-card-top">
+            <span class="tag tag-auto">Automação + BI</span>
+            <span class="soon-pill">Em breve</span>
+          </div>
+          <h3>Radar Prata da Casa</h3>
+          <p>
+            Observatório de talentos brasileiros no exterior: automação semanal cruza dados de 12 ligas com o histórico de Copas para identificar jogadores em ascensão via IA.
+          </p>
+          <button class="btn-trigger" onclick="openProjectModal('radarprata')">Visualizar Case Completo</button>
+        </div>
+
+        <!-- Projeto 6: Dashboard de Convocação de Exames -->
+        <div class="project-card upcoming">
+          <div class="project-card-top">
+            <span class="tag tag-bi">Power BI</span>
+            <span class="soon-pill">Em breve</span>
+          </div>
+          <h3>Dashboard de Convocação de Exames (Exames Legais)</h3>
+          <p>
+            Painel de convocação preditiva que cruza cadastros do SOC com riscos ocupacionais, prevendo exames a vencer nas janelas de 30/60/90 dias por criticidade legal.
+          </p>
+          <button class="btn-trigger" onclick="openProjectModal('convocacaoexames')">Visualizar Case Completo</button>
+        </div>
+
+        <!-- Projeto 7: Outros projetos em desenvolvimento (agregador) -->
+        <div class="project-card upcoming">
+          <div class="project-card-top">
+            <span class="tag tag-dev">Roadmap</span>
+            <span class="soon-pill">7 projetos</span>
+          </div>
+          <h3>Outros Projetos em Desenvolvimento</h3>
+          <p>
+            Mais 7 projetos autorais no pipeline — de auditoria antifraude logística a People Analytics de saúde ocupacional. Confira o resumo de cada um.
+          </p>
+          <button class="btn-trigger" onclick="openProjectModal('outrosprojetos')">Ver Lista Completa</button>
         </div>
 
       </div>
@@ -545,8 +685,8 @@
          TRILHA DE CONHECIMENTO (REORGANIZADA)
          =========================================================== -->
     <section id="trilha">
-      <div class="section-label">// Trilha de Estudos</div>
-      <h2>Formação Contínua</h2>
+      <div class="section-label">// Certificados</div>
+      <h2>Certificações e Desenvolvimento</h2>
 
       <h3 class="subsection-title">Concluído</h3>
       <div class="courses-grid">
@@ -616,13 +756,44 @@
     </section>
 
     <!-- ===========================================================
+         CONTATO
+         =========================================================== -->
+    <section id="contato">
+      <div class="section-label">// Contato</div>
+      <h2>Vamos conversar</h2>
+      <div class="contact-grid">
+        <a class="contact-card" href="https://wa.me/5511991663943" target="_blank" rel="noopener">
+          <img class="contact-icon" src="assets/whatsapp.png" alt="WhatsApp">
+          <div class="contact-card-text">
+            <span class="contact-card-label">WhatsApp</span>
+            <span class="contact-card-value">(11) 99166-3943</span>
+          </div>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/victor-monteiro-6816b5192/" target="_blank" rel="noopener">
+          <img class="contact-icon" src="assets/linkedin.png" alt="LinkedIn">
+          <div class="contact-card-text">
+            <span class="contact-card-label">LinkedIn</span>
+            <span class="contact-card-value">victor-monteiro-6816b5192</span>
+          </div>
+        </a>
+        <a class="contact-card" href="mailto:vitormont26@gmail.com">
+          <span class="contact-icon-mail">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"></path><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0-8 5-8-5"></path></svg>
+          </span>
+          <div class="contact-card-text">
+            <span class="contact-card-label">E-mail</span>
+            <span class="contact-card-value">vitormont26@gmail.com</span>
+          </div>
+        </a>
+      </div>
+      <p class="contact-signoff">Obrigado por visitar meu portfólio! Será um prazer conversar sobre a próxima oportunidade.</p>
+    </section>
+
+    <!-- ===========================================================
          RODAPÉ / CONTATO
          =========================================================== -->
     <footer>
-      <div class="contact-links">
-        <a href="mailto:vitormont26@gmail.com">E-mail</a>
-        <a href="https://www.linkedin.com/in/victor-monteiro-6816b5192" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+      <div class="copyright">Obrigado por visitar meu portfólio!</div>
       <div class="copyright">© 2026 Victor Monteiro</div>
     </footer>
 
@@ -745,6 +916,128 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: AgendaSST.AI Sentinela -->
+  <div id="modal-sentinela" class="modal-overlay" onclick="if(event.target == this) closeProjectModal('sentinela')">
+    <div class="modal-content modal-narrow">
+      <button class="modal-close" onclick="closeProjectModal('sentinela')">&times;</button>
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+        <span class="tag tag-auto">Automação + BI</span>
+        <span class="soon-pill">Em breve</span>
+      </div>
+      <h3 style="font-size: 24px; margin-bottom: 12px;">AgendaSST.AI Sentinela</h3>
+
+      <span class="modal-block-title">Diferenciais para o mercado</span>
+      <p style="color: var(--text-secondary); font-size: 14px;">
+        APIs instáveis e atrasos humanos podem quebrar o fluxo de agendamento de exames periódicos em silêncio, deixando a empresa desprotegida contra os prazos fiscais do eSocial (evento S-2220) — com risco real de autuações e passivos trabalhistas pela transmissão tardia dos exames.
+      </p>
+
+      <span class="modal-block-title">Complexidade técnica</span>
+      <p style="color: var(--text-secondary); font-size: 14px;">
+        Um watchdog no n8n faz checagens retroativas periódicas na base de dados, identificando exames realizados sem ASO emitido além do limite aceitável, em paralelo a um Error Trigger dedicado a capturar falhas imediatas de infraestrutura.
+      </p>
+
+      <span class="modal-block-title">Aplicação prática no mercado</span>
+      <p style="color: var(--text-secondary); font-size: 14px;">
+        Sistema de segurança ativa com filtragem de duplicidade que notifica gestores via WhatsApp e e-mail apenas quando há desvios reais e urgentes de SLA — prova de arquitetura resiliente e tolerante a falhas em processos corporativos críticos.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal 4: Radar Prata da Casa -->
+  <div id="modal-radarprata" class="modal-overlay" onclick="if(event.target == this) closeProjectModal('radarprata')">
+    <div class="modal-content modal-narrow">
+      <button class="modal-close" onclick="closeProjectModal('radarprata')">&times;</button>
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+        <span class="tag tag-auto">Automação + BI</span>
+        <span class="soon-pill">Em breve</span>
+      </div>
+      <h3 style="font-size: 24px; margin-bottom: 12px;">Radar Prata da Casa — Observatório de Talentos Brasileiros</h3>
+
+      <span class="modal-block-title">Diferenciais para o mercado</span>
+      <p style="color: var(--text-secondary); font-size: 14px;">
+        Jogadores brasileiros que se destacam em ligas menores ou divisões de acesso costumam passar despercebidos pelo público e por analistas convencionais, por falta de dados consolidados e narrativas analíticas unificadas sobre o desempenho de atletas nacionais espalhados pelo mundo.
+      </p>
+
+      <span class="modal-block-title">Complexidade técnica</span>
+      <p style="color: var(--text-secondary); font-size: 14px;">
+        Automação semanal no n8n consome dados de APIs esportivas gratuitas, filtra o top de artilharia e assistência das 12 principais competições cobertas e envia as informações a um agente de IA, que compara os dados com o histórico de Copas passadas para encontrar anomalias positivas de performance.
+      </p>
+
+      <span class="modal-block-title">Aplicação prática no mercado</span>
+      <p style="color: var(--text-secondary); font-size: 14px;">
+        Portal analítico de scouting com relatórios de IA que narram quem está subindo de nível e quais jogadores devem entrar no radar do futebol nacional — prova de engenharia de dados aplicada a limites estritos de API, Star Schema e enriquecimento de texto por IA.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal 5: Dashboard de Convocação de Exames -->
+  <div id="modal-convocacaoexames" class="modal-overlay" onclick="if(event.target == this) closeProjectModal('convocacaoexames')">
+    <div class="modal-content modal-narrow">
+      <button class="modal-close" onclick="closeProjectModal('convocacaoexames')">&times;</button>
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+        <span class="tag tag-bi">Power BI</span>
+        <span class="soon-pill">Em breve</span>
+      </div>
+      <h3 style="font-size: 24px; margin-bottom: 12px;">Dashboard de Convocação de Exames Ocupacionais (Exames Legais)</h3>
+
+      <span class="modal-block-title">Diferenciais para o mercado</span>
+      <p style="color: var(--text-secondary); font-size: 14px;">
+        O acompanhamento de prazos de exames periódicos e de mudança de função ainda depende, em muitas empresas, de planilhas manuais ou relatórios estáticos exportados do SOC — com risco elevado de multas trabalhistas e interdições caso colaboradores desempenhem funções nocivas com exames vencidos.
+      </p>
+
+      <span class="modal-block-title">Complexidade técnica</span>
+      <p style="color: var(--text-secondary); font-size: 14px;">
+        Pipeline que ingere e trata os dados de agendamentos e cadastros do SOC, aplica regras condicionais de acordo com idade, riscos ocupacionais e tipo de exame, e gera um cronograma dinâmico de convocações pendentes.
+      </p>
+
+      <span class="modal-block-title">Aplicação prática no mercado</span>
+      <p style="color: var(--text-secondary); font-size: 14px;">
+        Painel de visibilidade que prevê quais colaboradores precisam ser convocados nas janelas de 30, 60 ou 90 dias, segmentado por criticidade legal e área — demonstrando domínio da NR-07 e do rigor de planejamento exigido por grandes clientes industriais.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal 6: Outros Projetos em Desenvolvimento (agregador) -->
+  <div id="modal-outrosprojetos" class="modal-overlay" onclick="if(event.target == this) closeProjectModal('outrosprojetos')">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeProjectModal('outrosprojetos')">&times;</button>
+      <span class="tag tag-dev" style="margin-bottom:8px;">Roadmap</span>
+      <h3 style="font-size: 24px; margin-bottom: 6px;">Outros Projetos em Desenvolvimento</h3>
+      <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 20px;">Próximos projetos autorais do pipeline, com um resumo rápido de cada um.</p>
+
+      <ul class="others-list">
+        <li>
+          <h4>Anti Fraude Logística</h4>
+          <p>Robô auditor que cruza logs operacionais de rastreio em tempo real, detecta reversões contratuais impossíveis (como um "insucesso" virando "entregue" em minutos) e expõe o prejuízo financeiro recuperado em uma matriz de risco de transportadoras.</p>
+        </li>
+        <li>
+          <h4>Distribuidor Inteligente de Leads &amp; Custo de Inação (COI)</h4>
+          <p>Roteamento dinâmico de leads por carga de trabalho dos SDRs, com painel em Power BI que calcula em tempo real a perda financeira estimada por cada minuto de atraso no primeiro contato comercial.</p>
+        </li>
+        <li>
+          <h4>Simulador de House Edge — Análise Crítica do Mercado de Bets</h4>
+          <p>Motor de simulação matemática com apostadores sintéticos (conservador, moderado e agressivo) que desconstrói a margem oculta das casas de apostas e demonstra visualmente a taxa de ruína no longo prazo.</p>
+        </li>
+        <li>
+          <h4>Distribuidor Inteligente de Instruções de Trabalho</h4>
+          <p>Triagem cognitiva que interpreta semanticamente chamados de suporte via IA, associa o texto livre à instrução de trabalho correspondente e envia o procedimento certo direto para o operador logístico.</p>
+        </li>
+        <li>
+          <h4>Dashboard de Taxa de Absenteísmo</h4>
+          <p>Monitor de ausências que cruza faltas e atestados com cargos, departamentos e CID, aplicando o fator de Bradford para medir o impacto real de faltas curtas recorrentes na produtividade.</p>
+        </li>
+        <li>
+          <h4>Dashboard de Exames Alterados</h4>
+          <p>Painel de detecção precoce de anomalias clínicas em exames ocupacionais (audiometria, espirometria, sangue), alertando desvios antes que se transformem em perdas funcionais irreversíveis.</p>
+        </li>
+        <li>
+          <h4>Dashboard de Perfil Epidemiológico</h4>
+          <p>Mapa epidemiológico consolidado dos colaboradores (idade, gênero, fatores de risco) para direcionar o orçamento de saúde corporativa às ações preventivas de maior retorno.</p>
+        </li>
+      </ul>
     </div>
   </div>
 
