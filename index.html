@@ -891,16 +891,15 @@
         <div class="media-container">
           <div style="display:flex; justify-content:space-between; align-items:center;">
             <span class="modal-block-title" style="margin-top:0;">Vídeo 02 — Conformidade Legal &amp; Régua ASO</span>
-            <span class="soon-pill">Em breve</span>
+            <span class="soon-pill" style="border-color: var(--accent); color: var(--accent);">Publicado</span>
           </div>
           <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 6px;">
             <strong style="color: var(--text-primary);">Origem no SOC:</strong> Tela 109 (Agenda/Relatório de Convocação de Exames) e Tela 223 (Exames Ocupacionais / ASOs), utilizadas no dia a dia para controlar o vencimento e agendamento dos exames do PCMSO.<br>
             <strong style="color: var(--text-primary);">O que demonstra:</strong> Monitoramento contínuo da taxa de conformidade e exames a vencer. Apresenta a regra de negócio automatizada da régua de cobrança por tempo de atraso (aging de ASO) e o acionamento direto dos gestores operacionais.
           </p>
-          <div class="media-frame" style="display:flex; align-items:center; justify-content:center; background: var(--bg-panel); border: 1px dashed var(--border);">
-            <p style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-secondary); text-align: center; padding: 20px;">
-              Conteúdo em produção<br><span style="color: var(--accent);">Em breve no LinkedIn</span>
-            </p>
+          <div class="media-frame">
+            <iframe src="https://www.youtube.com/embed/T-hyK4JQ7gs" title="Plataforma Executiva SST - Conformidade Legal e Régua ASO" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <button class="btn-fullscreen" onclick="toggleFrameFullscreen(this)">[EXPANDIR]</button>
           </div>
         </div>
 
@@ -990,7 +989,7 @@
 
       <span class="modal-block-title">Complexidade técnica</span>
       <p style="color: var(--text-secondary); font-size: 14px;">
-        Ecossistema orientado a eventos construído em n8n com agente de IA (LangChain + GPT-4.1-mini) que interpreta linguagem natural, consulta disponibilidade e executa o agendamento sem intervenção humana. Um segundo fluxo processa ASOs assinados por convenção de nomenclatura de arquivo, atualiza status via eSocial (S-2220/NR-7) e dispara confirmação multicanal. A camada analítica em Power BI roda sobre modelo Star Schema com relacionamento ativo/inativo (USERELATIONSHIP) para separar data de solicitação da data de execução.
+        Ecossistema orientado a eventos construído em n8n com agente de IA (LangChain + GPT-4.1-mini) que interpreta linguagem natural, consulta disponibilidade e executa o agendamento sem intervenção humana. Um segundo fluxo processa ASOs assinados por convenção de nomenclatura de arquivo, atualiza status via eSocial (S-2220/NR-7) e dispara confirmação multicanal. A camada analítica em Power BI roda sobre modelo Star Schema com relacionamento ativo/inativo (USERELATIONSHIP) para separar data de solicitação e data de execução.
       </p>
 
       <span class="modal-block-title">Aplicação prática no mercado</span>
