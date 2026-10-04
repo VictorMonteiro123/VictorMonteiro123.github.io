@@ -1,1345 +1,246 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Victor Monteiro — Portfólio de Dados &amp; Automação</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Victor Hugo Monteiro | Analista de BI e Dados | Power BI e n8n</title>
+<meta name="description" content="Portfólio de Victor Hugo Monteiro, analista de BI, dados e automação em Santo André/SP. Power BI, DAX, n8n e agentes de IA, com base em saúde e segurança do trabalho.">
+<meta name="theme-color" content="#F4F7F8">
+<link rel="canonical" href="https://victormonteiro123.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230B6E75'/%3E%3Ctext x='16' y='22' font-size='15' font-family='Georgia' font-weight='700' text-anchor='middle' fill='%23fff'%3EVM%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Victor Hugo Monteiro | Analista de BI e Dados">
+<meta property="og:description" content="Do dado manual ao indicador e à ação automatizada: Power BI, DAX, n8n e agentes de IA.">
+<meta property="og:url" content="https://victormonteiro123.github.io/">
+<meta property="og:image" content="https://victormonteiro123.github.io/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Victor Hugo Monteiro","jobTitle":"Analista de BI e Dados","url":"https://victormonteiro123.github.io/","sameAs":["https://www.linkedin.com/in/victor-monteiro-6816b5192/"],"address":{"@type":"PostalAddress","addressLocality":"Santo André","addressRegion":"SP","addressCountry":"BR"}}</script>
+<style>
+:root{color-scheme:light;--bg:#F4F7F8;--card:#fff;--ink:#10242E;--ink2:#3F5560;--teal:#0B6E75;--tealbg:#DDEFF0;--indigo:#2F4A9B;--indbg:#E6EAF7;--line:#D3DCE0;--ctl:#7B8F99;--serif:Georgia,"Times New Roman",serif;--sans:system-ui,"Segoe UI",Roboto,Arial,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--ink);font:17px/1.65 var(--sans)}
+a{color:var(--teal)}
+:focus-visible{outline:3px solid var(--indigo);outline-offset:2px}
+.skip{position:absolute;left:-999px;background:var(--ink);color:#fff;padding:8px 12px}.skip:focus{left:8px;top:8px;z-index:99}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:10}
+header.top .w{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+header.top strong{font:700 17px var(--serif)}
+nav ul{display:flex;gap:18px;list-style:none;padding:0;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-size:15px;padding:4px 0;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--teal)}
+h1,h2,h3{font-family:var(--serif);line-height:1.2}
+.hero{padding:56px 0 40px;display:grid;gap:32px;grid-template-columns:1fr}
+@media(min-width:760px){.hero{grid-template-columns:1fr 210px;align-items:center}}
+.hero img{width:210px;height:280px;object-fit:cover;object-position:center 20%;border-radius:6px;border:1px solid var(--line);background:var(--card)}
+.name{color:var(--teal);font-weight:600;margin-bottom:10px}
+h1{font-size:clamp(30px,5vw,46px);letter-spacing:-.01em;margin-bottom:16px}
+.roles{color:var(--ink2);font-weight:600;margin-bottom:16px}
+.lede{max-width:62ch;margin-bottom:12px}
+.meta{color:var(--ink2);font-size:15px;margin:16px 0 22px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 18px;border-radius:5px;font:600 15px var(--sans);text-decoration:none;border:2px solid var(--teal);cursor:pointer}
+.btn.p{background:var(--teal);color:#fff}.btn.s{background:transparent;color:var(--teal)}
+.btn:hover{border-color:var(--ink)}
+section{padding:48px 0}
+h2{font-size:30px;margin-bottom:8px}
+.sub{color:var(--ink2);max-width:66ch;margin-bottom:28px}
+.story{border-left:3px solid var(--line);margin-left:6px;padding-left:24px;display:grid;gap:30px}
+.chap{position:relative;max-width:70ch}
+.chap::before{content:"";position:absolute;left:-33px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:3px solid var(--teal)}
+.chap h3{font-size:21px}.when{color:var(--ink2);font-size:15px;margin:2px 0 8px}
+.chap.key{max-width:none;background:var(--card);border:1px solid var(--ctl);border-radius:8px;padding:24px}
+.chap.key::before{left:-36px;width:17px;height:17px;top:28px;background:var(--teal)}
+.chap.key h3{font-size:25px}
+.chap ul{padding-left:20px;margin:10px 0;display:grid;gap:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0!important;margin:12px 0 0!important}
+.chips li{background:var(--indbg);padding:2px 12px;border-radius:4px;font-size:14.5px}
+.cases{display:grid;gap:24px}
+.case{background:var(--card);border:1px solid var(--ctl);border-radius:8px;padding:24px;display:grid;gap:4px}
+.case h3{font-size:23px}
+.case h4{font:700 15px var(--sans);color:var(--teal);margin:14px 0 2px}
+.case p{max-width:72ch}
+.tag{display:inline-block;font-size:14px;font-weight:600;padding:2px 10px;border-radius:4px;margin-bottom:8px;justify-self:start}
+.t-f{background:var(--indbg);color:var(--ink)}.t-r{background:var(--tealbg);color:var(--ink)}.t-d{border:2px solid var(--ink);color:var(--ink)}
+.note{font-size:14.5px;color:var(--ink2);margin-top:10px}
+.acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.fr{position:relative;aspect-ratio:16/9;background:var(--line);border:1px solid var(--ctl);margin-top:14px;border-radius:4px;overflow:hidden}
+.fr iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.grp{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.grp div{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:18px}
+.grp h3{font-size:18px;margin-bottom:4px}.grp p{font-size:15px;color:var(--ink2)}
+.cert{list-style:none;padding:0;display:grid;gap:10px;max-width:72ch;margin-bottom:8px}
+.cert li{border-bottom:1px solid var(--line);padding-bottom:10px}
+.cert small{display:block;color:var(--ink2);font-size:14.5px}
+h3.g{font-size:19px;margin:24px 0 10px}
+footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--ink2);font-size:14.5px}
+footer p+p{margin-top:6px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
-  <!-- ===========================================================
-       BLOCO DE FONTES
-       =========================================================== -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+.case{border-top:5px solid var(--a,var(--teal))}
+.case h4{color:var(--a,var(--teal))}
+.case .chips li{background:color-mix(in srgb,var(--a,var(--teal)) 13%,#fff)}
+.case .btn{border-color:var(--a,var(--teal))}.case .btn.p{background:var(--a,var(--teal))}.case .btn.s{color:var(--a,var(--teal))}
+.case ul.pts{padding-left:20px;display:grid;gap:4px;max-width:72ch;font-size:16px}
+.lbl{font-weight:600;font-size:14.5px;color:var(--ink2);flex-basis:100%}
+.guide{background:var(--indbg);border-radius:8px;padding:14px 18px;max-width:72ch;margin-bottom:24px;font-size:15.5px}
+.chap:nth-child(1)::before{border-color:var(--indigo)}.chap:nth-child(2)::before{border-color:#1C5F99}.chap:nth-child(4)::before{border-color:#5B3FA0}
 
-  <style>
-    :root {
-      --bg: #0B0E14;
-      --bg-panel: #11151D;
-      --bg-panel-hover: #161B25;
-      --border: #232938;
-      --text-primary: #E8EAED;
-      --text-secondary: #8B93A7;
-      --accent: #4D8FCC;
-      --accent-soft: #4D8FCC22;
-      --tag-bi: #4D8FCC;
-      --tag-auto: #C99A2E;
-      --tag-dev: #6FBF8B;
-      --radius: 10px;
-    }
+/* Logos: para inserir uma imagem, crie uma regra como .ico[data-logo="power-bi"]{background-image:url(assets/logos/power-bi.svg)} */
+.ico{display:inline-block;width:22px;height:22px;border-radius:5px;background:#E3EAEC center/contain no-repeat;margin-right:8px;flex:none}
+.chips li{display:inline-flex;align-items:center}
+.grp2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.lv{list-style:none;padding:0;display:grid;gap:12px;margin-top:10px}.lv li{font-size:15px;color:var(--ink2)}
+.lv b{color:var(--ink);display:block}.nv{display:inline-block;background:var(--tealbg);color:var(--ink);font-size:13px;font-weight:600;padding:1px 8px;border-radius:4px;margin:2px 0 3px}.lv .nv{display:inline-block}
+.crl{display:grid;gap:12px;max-width:760px;margin-bottom:8px}
+.crs{background:var(--card);border:1px solid var(--ctl);border-radius:8px}
+.sm{display:flex;align-items:center;gap:0;padding:14px 16px;cursor:pointer;list-style:none}
+.crs>.sm{cursor:default}details.crs>.sm{cursor:pointer}
+.sm::-webkit-details-marker{display:none}
+.sm strong{display:block}.sm small{display:block;color:var(--ink2);font-size:14.5px}
+.sm em{margin-left:auto;font-style:normal;font-size:14px;font-weight:600;color:var(--teal);padding-left:12px}
+details[open] .sm em{visibility:hidden}
+.crs .in{padding:0 16px 16px}.crs .in p{font-weight:600;margin-bottom:6px;color:var(--ink2);font-size:15px}
+.crs .pts{padding-left:20px;display:grid;gap:4px;font-size:15.5px}
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+.ico{background:none;object-fit:contain}.ico.ph{background:#E3EAEC}
+.lv b{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.ico-r{margin:0}
 
-    body {
-      background: var(--bg);
-      color: var(--text-primary);
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
-      background-image:
-        linear-gradient(var(--border) 1px, transparent 1px),
-        linear-gradient(90deg, var(--border) 1px, transparent 1px);
-      background-size: 64px 64px;
-      background-attachment: fixed;
-    }
-
-    .wrap {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    a { color: inherit; text-decoration: none; }
-
-    /* =========================================================
-       HERO COM MOLDURA PROPORCIONAL (3:4)
-       ========================================================= */
-    header {
-      padding: 96px 0 64px;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      flex-direction: column-reverse;
-      gap: 40px;
-    }
-
-    @media (min-width: 768px) {
-      header {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .hero-content { flex: 1; max-width: 620px; }
-      .hero-photo-container { flex-shrink: 0; }
-    }
-
-    .hero-photo {
-      width: 200px;
-      height: 266px; /* Proporção nativa 3:4 */
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      object-fit: cover;
-      background: var(--bg-panel);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-    }
-
-    .eyebrow {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 13px;
-      color: var(--accent);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .eyebrow::before {
-      content: '';
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 0 4px var(--accent-soft);
-    }
-
-    h1 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-weight: 700;
-      font-size: clamp(32px, 5vw, 48px);
-      line-height: 1.15;
-      margin-bottom: 20px;
-    }
-
-    .hero-desc {
-      font-size: 16px;
-      color: var(--text-secondary);
-      margin-bottom: 32px;
-    }
-    .hero-desc strong { color: var(--text-primary); font-weight: 600; }
-
-    .hero-links {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      font-family: 'Inter', sans-serif;
-      font-size: 14px;
-      font-weight: 600;
-      padding: 11px 20px;
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: border-color 0.15s ease, background 0.15s ease;
-    }
-    .btn-primary {
-      background: var(--accent);
-      color: #0B0E14;
-      border-color: var(--accent);
-    }
-    .btn-primary:hover { background: #5FA0DD; }
-    .btn-secondary { color: var(--text-primary); background: transparent; }
-    .btn-secondary:hover { border-color: var(--accent); }
-
-    /* =========================================================
-       SEÇÕES
-       ========================================================= */
-    section { padding: 64px 0; border-bottom: 1px solid var(--border); }
-    
-    .section-label {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 13px;
-      color: var(--text-secondary);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 8px;
-    }
-
-    h2 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 26px;
-      font-weight: 600;
-      margin-bottom: 32px;
-    }
-
-    h3.subsection-title {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin: 40px 0 8px;
-    }
-    h3.subsection-title:first-of-type { margin-top: 0; }
-
-    .subsection-desc {
-      font-size: 14px;
-      color: var(--text-secondary);
-      margin-bottom: 24px;
-      max-width: 76ch;
-    }
-
-    .about-text {
-      color: var(--text-secondary);
-      max-width: 72ch;
-      font-size: 16px;
-    }
-    .about-text strong { color: var(--text-primary); font-weight: 600; }
-
-    /* GRID DE PROJETOS */
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .project-card {
-      background: var(--bg-panel);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      transition: border-color 0.15s ease, transform 0.15s ease, background 0.15s ease;
-    }
-    .project-card:hover {
-      border-color: var(--accent);
-      background: var(--bg-panel-hover);
-      transform: translateY(-2px);
-    }
-
-    .tag {
-      display: inline-block;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
-      font-weight: 500;
-      padding: 4px 10px;
-      border-radius: 100px;
-      margin-bottom: 16px;
-      width: fit-content;
-    }
-    .tag-bi { background: #4D8FCC22; color: var(--tag-bi); }
-    .tag-auto { background: #C99A2E22; color: var(--tag-auto); }
-    .tag-dev { background: #6FBF8B22; color: var(--tag-dev); }
-    
-    .project-card h3 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-    .project-card p {
-      font-size: 14px;
-      color: var(--text-secondary);
-      flex-grow: 1;
-      margin-bottom: 20px;
-    }
-
-    .project-card .card-link, .project-card .btn-trigger {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--accent);
-      background: transparent;
-      border: none;
-      text-align: left;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .project-card .card-link::after, .project-card .btn-trigger::after { content: '→'; transition: transform 0.15s ease; }
-    .project-card:hover .card-link::after, .project-card:hover .btn-trigger::after { transform: translateX(3px); }
-
-    .project-card-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 16px;
-    }
-    .project-card-top .tag { margin-bottom: 0; }
-
-    .soon-pill {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 10px;
-      font-weight: 500;
-      color: var(--text-secondary);
-      border: 1px solid var(--border);
-      border-radius: 100px;
-      padding: 3px 9px;
-      letter-spacing: 0.04em;
-      white-space: nowrap;
-    }
-
-    .project-card.upcoming { border-style: dashed; }
-    .project-card.upcoming:hover { border-style: solid; }
-
-    .others-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-      margin-top: 4px;
-    }
-    .others-list li { border-bottom: 1px solid var(--border); padding-bottom: 16px; }
-    .others-list li:last-child { border-bottom: none; padding-bottom: 0; }
-    .others-list h4 {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 15px;
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
-    .others-list p { font-size: 13.5px; color: var(--text-secondary); }
-
-    /* =========================================================
-       MODAIS EM FULLSCREEN
-       ========================================================= */
-    .modal-overlay {
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(7, 9, 13, 0.95);
-      z-index: 1000;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    .modal-overlay.is-open { display: flex; }
-
-    .modal-content {
-      background: var(--bg-panel);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      width: 100%;
-      max-width: 920px;
-      max-height: 90vh;
-      overflow-y: auto;
-      padding: 32px;
-      position: relative;
-    }
-
-    .modal-content.modal-narrow { max-width: 640px; }
-
-    .modal-close {
-      position: absolute;
-      top: 20px; right: 20px;
-      background: transparent; border: none;
-      color: var(--text-secondary); font-size: 24px;
-      cursor: pointer;
-    }
-    .modal-close:hover { color: var(--text-primary); }
-
-    .modal-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 24px;
-      margin-top: 24px;
-    }
-    @media (min-width: 768px) {
-      .modal-grid { grid-template-columns: 1fr 1fr; }
-    }
-
-    .media-container {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .media-frame {
-      background: #000;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      position: relative;
-      width: 100%;
-      aspect-ratio: 16/9;
-      overflow: hidden;
-    }
-
-    .media-frame iframe, .media-frame video {
-      width: 100%; height: 100%; border: none;
-    }
-
-    .btn-fullscreen {
-      position: absolute;
-      bottom: 12px; right: 12px;
-      background: rgba(17, 21, 29, 0.8);
-      border: 1px solid var(--border);
-      color: var(--text-primary);
-      padding: 6px 12px;
-      font-size: 12px;
-      font-family: 'JetBrains Mono', monospace;
-      border-radius: 4px;
-      cursor: pointer;
-      z-index: 10;
-    }
-    .btn-fullscreen:hover { background: var(--accent); color: #0B0E14; border-color: var(--accent); }
-
-    .modal-block-title {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 12px;
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      margin: 24px 0 8px;
-      display: block;
-    }
-    .modal-block-title:first-of-type { margin-top: 0; }
-
-    /* TRILHA DE CONHECIMENTO */
-    .courses-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 16px;
-    }
-    .course-card {
-      background: var(--bg-panel);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px;
-      text-align: left;
-      cursor: pointer;
-      width: 100%;
-      display: block;
-      transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
-      font-family: 'Inter', sans-serif;
-      color: var(--text-primary);
-    }
-    .course-card:hover {
-      border-color: var(--accent);
-      background: var(--bg-panel-hover);
-      transform: translateY(-2px);
-    }
-    .course-status {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
-      padding: 2px 8px;
-      border-radius: 4px;
-      float: right;
-    }
-    .status-done { background: #6FBF8B22; color: #6FBF8B; }
-    .status-doing { background: #C99A2E22; color: #C99A2E; }
-    .status-queue { background: #4D8FCC22; color: var(--accent); }
-
-    .course-card h4 { font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 600; }
-    .course-card .course-hint {
-      font-size: 12px;
-      color: var(--accent);
-      font-family: 'JetBrains Mono', monospace;
-      margin-top: 12px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .course-card .course-hint::after { content: '→'; transition: transform 0.15s ease; }
-    .course-card:hover .course-hint::after { transform: translateX(3px); }
-
-    .topic-list {
-      margin-top: 8px;
-      padding-left: 20px;
-      color: var(--text-secondary);
-      font-size: 14px;
-      line-height: 1.85;
-    }
-    .topic-list li { margin-bottom: 2px; }
-
-    .stack-list { display: flex; flex-wrap: wrap; gap: 10px; }
-    .stack-item {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 13px;
-      color: var(--text-secondary);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 8px 14px;
-    }
-
-    /* =========================================================
-       SEÇÃO DE CONTATO
-       ========================================================= */
-    #contato { border-bottom: none; padding-bottom: 40px; }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-    }
-
-    .contact-card {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      background: var(--bg-panel);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px;
-      transition: border-color 0.15s ease, transform 0.15s ease, background 0.15s ease;
-    }
-    .contact-card:hover {
-      border-color: var(--accent);
-      background: var(--bg-panel-hover);
-      transform: translateY(-2px);
-    }
-
-    .contact-icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 10px;
-      flex-shrink: 0;
-      object-fit: cover;
-    }
-
-    .contact-card-text { display: flex; flex-direction: column; gap: 2px; }
-    .contact-card-label {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 11px;
-      color: var(--text-secondary);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-    .contact-card-value { font-size: 15px; font-weight: 600; }
-
-    .contact-signoff {
-      margin-top: 28px;
-      font-size: 14px;
-      color: var(--text-secondary);
-    }
-
-    footer {
-      padding: 32px 0 80px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-    footer .contact-links { display: flex; gap: 20px; font-size: 14px; }
-    footer .contact-links a { color: var(--text-secondary); }
-    footer .contact-links a:hover { color: var(--accent); }
-    .copyright { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-secondary); }
-  </style>
+@media(min-width:760px){.hero{align-items:start}}
+.skills{background:var(--card);border:1px solid var(--ctl);border-radius:10px;padding:26px 28px 14px;margin-bottom:8px}
+.skills h2{font-size:24px;margin-bottom:2px}
+.sk{list-style:none;padding:0;display:grid;gap:6px 40px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:6px}
+.sk li{padding:6px 0 14px}
+.sh{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.sn{font-weight:700;letter-spacing:.02em;display:inline-flex;align-items:center}
+.bd{background:var(--indbg);color:var(--ink);font-size:13px;font-weight:600;padding:2px 10px;border-radius:4px}
+.trk{position:relative;height:10px;background:var(--line);border-radius:6px;margin-top:30px}
+.fl{display:block;height:100%;width:var(--v);border-radius:6px;background:linear-gradient(90deg,var(--indigo),var(--teal));animation:grow 1s ease-out}
+.pc{position:absolute;left:var(--v);bottom:16px;transform:translateX(-100%);background:var(--ink);color:#fff;font-size:12.5px;font-weight:700;padding:1px 8px;border-radius:4px;line-height:1.5}
+.pc::after{content:"";position:absolute;right:8px;top:100%;border:5px solid transparent;border-top-color:var(--ink)}
+@keyframes grow{from{width:0}}
+@media(prefers-reduced-motion:reduce){.fl{animation:none}}
+</style>
 </head>
 <body>
-
-  <div class="wrap">
-
-    <!-- ===========================================================
-         HEADER / HERO
-         =========================================================== -->
-    <header>
-      <div class="hero-content">
-        <div class="eyebrow">Disponível para novas oportunidades</div>
-        <h1>Victor Monteiro<br>transforma dados em decisão.</h1>
-        <p class="hero-desc">
-          Analista de Business Intelligence especializado em transformar operações complexas em sistemas de dados e automação.
-          Construí minha base técnica em duas consultorias de <strong>Saúde e Segurança do Trabalho com mais de 30 anos de atuação no mercado</strong> (Engemed e OSM Gestão de Segurança Ocupacional), onde estruturei do zero a governança de dados de SST para contas corporativas de grande porte.
-          Ampliei essa visão analítica em uma <strong>operação de E-commerce Cross-Border Brasil-China</strong> (3Cliques), atendendo mais de 99 países, aplicando BI e automação de processos em escala real de negócio.
-          Hoje desenvolvo arquiteturas Star Schema em Power BI e ecossistemas de automação com n8n e Inteligência Artificial voltados à resolução de problemas concretos de operação.
-        </p>
-        <div class="hero-links">
-          <a class="btn btn-primary" href="#projetos">Ver projetos</a>
-          <a class="btn btn-secondary" href="#contato">Vamos conversar ↓</a>
-        </div>
-      </div>
-      <div class="hero-photo-container">
-        <img class="hero-photo" src="assets/e99a8db8-61e0-467b-b9a2-cb44faae0d20.jpg" alt="Victor Monteiro" style="object-position: center 20%;">
-      </div>
-    </header>
-
-    <!-- ===========================================================
-         SOBRE
-         =========================================================== -->
-    <section id="sobre">
-      <div class="section-label">// Sobre</div>
-      <h2>Da complexidade da operação para a governança técnica do dado</h2>
-      <p class="about-text">
-        Minha trajetória é consolidada na intersecção entre processos operacionais críticos e engenharia de BI. 
-        Atuei diretamente no ecossistema de saúde ocupacional mapeando fluxos de conformidade legal (SOC, PCMSO, LTCAT e NR-01), além de gerenciar dados logísticos de alta escala em operações Brasil-China. 
-        <br><br>
-        Especialista no desenvolvimento de modelos relacionais performáticos, higienização no Power Query (M) e métricas avançadas em DAX. 
-        Atualmente, elevo o ROI de negócios desenhando agentes e fluxos autônomos no <strong>n8n</strong> integrados via APIs, enquanto expando minha stack técnica em SQL Server e Python focado em engenharia de dados.
-      </p>
-    </section>
-
-    <!-- ===========================================================
-         PROJETOS / PORTFÓLIO TÉCNICO
-         =========================================================== -->
-    <section id="projetos">
-      <div class="section-label">// Projetos</div>
-      <h2>Portfólio técnico</h2>
-
-      <!-- BLOCO 1: SAÚDE OCUPACIONAL & GOVERNANÇA DE SST -->
-      <h3 class="subsection-title">Saúde Ocupacional &amp; Governança de SST</h3>
-      <p class="subsection-desc">
-        Ecossistemas analíticos e soluções integradas desenvolvidos para transformar dados operacionais do SOC em governança de conformidade legal, gestão de passivos trabalhistas/previdenciários e inteligência de saúde populacional.
-      </p>
-
-      <div class="project-grid" style="margin-bottom: 48px;">
-
-        <!-- 1º CARD: Mapeamento de Riscos Psicossociais -->
-        <div class="project-card">
-          <span class="tag tag-bi">Power BI</span>
-          <h3>Mapeamento de Riscos Psicossociais (NR-01)</h3>
-          <p>
-            Solução estratégica de conformidade legal baseada na metodologia HSE-IT. Conta com um motor de recomendação dinâmico em DAX focado na priorização e mitigação de fatores de risco organizacionais.
-          </p>
-          <button class="btn-trigger" onclick="openProjectModal('psicossocial')">Visualizar Case Completo</button>
-        </div>
-
-        <!-- 2º CARD: Plataforma Executiva 360º — Gestão de SST -->
-        <div class="project-card">
-          <span class="tag tag-auto">Automação + BI</span>
-          <h3>Plataforma Executiva 360º — Gestão de SST</h3>
-          <p>
-            Torre de controle analítico-decisional que transforma dados estáticos do SOC em uma camada flexível de gestão. Integra Power BI, automações de cobrança, escalonamento hierárquico, Fator de Bradford e recomendações prescritivas.
-          </p>
-          <button class="btn-trigger" onclick="openProjectModal('plataformasst')">Visualizar Case Completo</button>
-        </div>
-
-        <!-- 3º CARD: AgendaSST.AI -->
-        <div class="project-card">
-          <span class="tag tag-auto">Automação + BI</span>
-          <h3>AgendaSST.AI — Inteligência de Agendamento</h3>
-          <p>
-            Ecossistema automatizado ponta a ponta. Captura agendamentos multifonte (WhatsApp/E-mail), realiza orquestração assíncrona por IA, atualiza bases relacionais e consolida uma matriz executiva de conciliação e perdas por No-Show.
-          </p>
-          <button class="btn-trigger" onclick="openProjectModal('agendasst')">Visualizar Case Completo</button>
-        </div>
-
-      </div>
-
-      <!-- BLOCO 2: ENGENHARIA DE DADOS & AUTOMAÇÕES DE NEGÓCIO -->
-      <h3 class="subsection-title">Engenharia de Dados &amp; Automações de Negócio</h3>
-      <p class="subsection-desc">
-        Soluções focadas em inteligência operacional, integração de sistemas, redução de atrito e eficiência de processos em diversas verticais corporativas.
-      </p>
-
-      <div class="project-grid">
-
-        <!-- Projeto EKÓ -->
-        <div class="project-card">
-          <span class="tag tag-auto">Automação + BI</span>
-          <h3>Projeto EKÓ — Impacto Social &amp; Operação</h3>
-          <p>
-            Centralização operacional e análise de engajamento para iniciativas de impacto social. Arquitetura de OCR autônoma integrada ao n8n para validação de termos e painel analítico de distribuição demográfica e volume de impacto.
-          </p>
-          <button class="btn-trigger" onclick="openProjectModal('eko')">Visualizar Case Completo</button>
-        </div>
-
-        <!-- Radar Prata da Casa -->
-        <div class="project-card upcoming">
-          <div class="project-card-top">
-            <span class="tag tag-auto">Automação + BI</span>
-            <span class="soon-pill">Em breve</span>
-          </div>
-          <h3>Radar Prata da Casa</h3>
-          <p>
-            Observatório de talentos brasileiros no exterior: automação semanal cruza dados de 12 ligas com o histórico de Copas para identificar jogadores em ascensão via IA.
-          </p>
-          <button class="btn-trigger" onclick="openProjectModal('radarprata')">Visualizar Case Completo</button>
-        </div>
-
-        <!-- Outros projetos em desenvolvimento -->
-        <div class="project-card upcoming">
-          <div class="project-card-top">
-            <span class="tag tag-dev">Roadmap</span>
-            <span class="soon-pill">4 projetos</span>
-          </div>
-          <h3>Outros Projetos em Desenvolvimento</h3>
-          <p>
-            Mais 4 projetos autorais no pipeline — de auditoria antifraude logística a Revenue Operations e Inteligência Artificial aplicados a processos operacionais. Confira o resumo de cada um.
-          </p>
-          <button class="btn-trigger" onclick="openProjectModal('outrosprojetos')">Ver Lista Completa</button>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===========================================================
-         STACK TÉCNICA
-         =========================================================== -->
-    <section id="stack">
-      <div class="section-label">// Stack</div>
-      <h2>Ferramentas e tecnologias</h2>
-      <div class="stack-list">
-        <span class="stack-item">Power BI</span>
-        <span class="stack-item">DAX Avançado</span>
-        <span class="stack-item">Power Query (M)</span>
-        <span class="stack-item">n8n Orquestração</span>
-        <span class="stack-item">Modelagem Dimensional (Star Schema)</span>
-        <span class="stack-item">Integração de APIs &amp; Webhooks</span>
-        <span class="stack-item">Engenharia de Prompts (LLMs)</span>
-        <span class="stack-item">Excel Avançado &amp; VBA</span>
-        <span class="stack-item">SQL</span>
-        <span class="stack-item">HTML5, CSS3 &amp; JavaScript</span>
-        <span class="stack-item">C#</span>
-      </div>
-    </section>
-
-    <!-- ===========================================================
-         TRILHA DE CONHECIMENTO
-         =========================================================== -->
-    <section id="trilha">
-      <div class="section-label">// Certificados</div>
-      <h2>Certificações e Desenvolvimento</h2>
-
-      <h3 class="subsection-title">Concluído</h3>
-      <div class="courses-grid">
-        <button class="course-card" onclick="openCourseModal('n8n')">
-          <span class="course-status status-done">Concluído</span>
-          <h4>Formação n8n 2026: Automação e Criação de Agentes de IA (70h)</h4>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">Criação de agentes autônomos, tool calling avançado e engenharia de fluxos para negócios.</p>
-          <span class="course-hint">Ver conteúdo aprendido</span>
-        </button>
-        <button class="course-card" onclick="openCourseModal('powerbi')">
-          <span class="course-status status-done">Concluído</span>
-          <h4>Microsoft Power BI Para Business Intelligence e Data Science</h4>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">Modelagem dimensional, DAX, Power Query e governança de relatórios corporativos.</p>
-          <span class="course-hint">Ver conteúdo aprendido</span>
-        </button>
-      </div>
-
-      <h3 class="subsection-title">Em andamento</h3>
-      <div class="courses-grid">
-        <button class="course-card" onclick="openCourseModal('sql')">
-          <span class="course-status status-doing">Cursando</span>
-          <h4>SQL para Análise de Dados (SQL Completo)</h4>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">Linguagem padrão de mercado para consulta, modelagem e governança de dados — base técnica para qualquer stack de BI, automação e engenharia de dados corporativa.</p>
-          <span class="course-hint">Ver progresso</span>
-        </button>
-      </div>
-
-      <h3 class="subsection-title">Trilha de Expansão Tecnológica <span style="font-weight:400; color: var(--text-secondary); font-size: 13px;">— cursos adquiridos, fila de estudo planejada</span></h3>
-      <div class="courses-grid">
-        <button class="course-card" onclick="openCourseModal('csharp')">
-          <span class="course-status status-queue">Adquirido</span>
-          <h4>C# COMPLETO (Programação Orientada a Objetos + Projetos)</h4>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">Fundamentos sólidos de arquitetura, POO e desenvolvimento técnico modular.</p>
-          <span class="course-hint">Ver ementa</span>
-        </button>
-        <button class="course-card" onclick="openCourseModal('webapi')">
-          <span class="course-status status-queue">Adquirido</span>
-          <h4>Curso Web API ASP .NET Core Essencial (.NET 8 / .NET 9)</h4>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">Construção de APIs escaláveis voltadas ao backend corporativo.</p>
-          <span class="course-hint">Ver ementa</span>
-        </button>
-        <button class="course-card" onclick="openCourseModal('excel')">
-          <span class="course-status status-queue">Adquirido</span>
-          <h4>Excel do Básico ao Avançado, Macro e VBA + Power BI</h4>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">Automação de planilhas e integração de dados entre Excel e Power BI.</p>
-          <span class="course-hint">Ver ementa</span>
-        </button>
-        <button class="course-card" onclick="openCourseModal('prompt')">
-          <span class="course-status status-queue">Adquirido</span>
-          <h4>Engenharia de Prompts (Prompt Engineering)</h4>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">Estruturação de prompts e agentes de IA para uso produtivo em automações.</p>
-          <span class="course-hint">Ver ementa</span>
-        </button>
-        <button class="course-card" onclick="openCourseModal('webdev')">
-          <span class="course-status status-queue">Adquirido</span>
-          <h4>Desenvolvimento Web Completo</h4>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">Front-end e back-end aplicados à construção de ferramentas próprias.</p>
-          <span class="course-hint">Ver ementa</span>
-        </button>
-        <button class="course-card" onclick="openCourseModal('logica')">
-          <span class="course-status status-queue">Adquirido</span>
-          <h4>Algoritmo e Lógica de Programação</h4>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-top: 8px;">Base lógica para qualquer linguagem de programação a ser aprendida.</p>
-          <span class="course-hint">Ver ementa</span>
-        </button>
-      </div>
-    </section>
-
-    <!-- ===========================================================
-         CONTATO
-         =========================================================== -->
-    <section id="contato">
-      <div class="section-label">// Contato</div>
-      <h2>Vamos conversar</h2>
-      <div class="contact-grid">
-        <a class="contact-card" href="https://wa.me/5511991663943" target="_blank" rel="noopener">
-          <img class="contact-icon" src="assets/whatsapp.png" alt="WhatsApp">
-          <div class="contact-card-text">
-            <span class="contact-card-label">WhatsApp</span>
-            <span class="contact-card-value">(11) 99166-3943</span>
-          </div>
-        </a>
-        <a class="contact-card" href="https://www.linkedin.com/in/victor-monteiro-6816b5192/" target="_blank" rel="noopener">
-          <img class="contact-icon" src="assets/linkedin.png" alt="LinkedIn">
-          <div class="contact-card-text">
-            <span class="contact-card-label">LinkedIn</span>
-            <span class="contact-card-value">Conectar no LinkedIn</span>
-          </div>
-        </a>
-        <a class="contact-card" href="mailto:vitormont26@gmail.com">
-          <img class="contact-icon" src="assets/gmail.png" alt="Gmail">
-          <div class="contact-card-text">
-            <span class="contact-card-label">E-mail</span>
-            <span class="contact-card-value">vitormont26@gmail.com</span>
-          </div>
-        </a>
-      </div>
-      <p class="contact-signoff">Obrigado por visitar meu portfólio! Será um prazer conversar sobre a próxima oportunidade.</p>
-    </section>
-
-    <!-- ===========================================================
-         RODAPÉ
-         =========================================================== -->
-    <footer>
-      <div class="copyright">Obrigado por visitar meu portfólio!</div>
-      <div class="copyright">© 2026 Victor Monteiro</div>
-    </footer>
-
-  </div>
-
-  <!-- ===========================================================
-       ESTRUTURA DOS MODAIS DE PROJETOS
-       =========================================================== -->
-
-  <!-- Modal: Mapeamento de Riscos Psicossociais -->
-  <div id="modal-psicossocial" class="modal-overlay" onclick="if(event.target == this) closeProjectModal('psicossocial')">
-    <div class="modal-content">
-      <button class="modal-close" onclick="closeProjectModal('psicossocial')">&times;</button>
-      <span class="tag tag-bi" style="margin-bottom:8px;">Power BI</span>
-      <h3 style="font-size: 24px; margin-bottom: 12px;">Mapeamento de Riscos Psicossociais (NR-01)</h3>
-
-      <span class="modal-block-title">Diferenciais para o mercado</span>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        Desde 2022, a NR-01 tornou obrigatório o mapeamento de riscos psicossociais em todas as empresas brasileiras, mas a maioria não possui ferramentas quantitativas para transformar respostas de pesquisa (metodologia HSE-IT) em ações concretas de RH e SESMT — a gestão segue em planilhas dispersas, sem cruzamento de risco nem priorização de setor.
-      </p>
-
-      <span class="modal-block-title">Complexidade técnica</span>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        Solução construída sobre esquema estrela (1 fato + 8 dimensões), com CPF como chave de negócio, mais de 20 medidas DAX e um motor de recomendação que cruza categoria psicossocial × nível de risco, direcionando a ação para o responsável correto (RH, liderança ou SESMT) em tempo real.
-      </p>
-
-      <span class="modal-block-title">Aplicação prática no mercado</span>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        Implantado profissionalmente em contas reais como Bacardi e Chiarelli &amp; Witzel Construtora. Permite priorizar intervenções por setor, medir vulnerabilidade organizacional e comprovar conformidade legal em auditorias trabalhistas, reduzindo passivo jurídico ligado à saúde mental no trabalho.
-      </p>
-
-      <div class="media-container" style="margin-top: 24px;">
-        <span class="modal-block-title" style="margin-top:0;">Dashboard interativo</span>
-        <div class="media-frame">
-          <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMDNmZGI0OTAtM2Y1ZC00MmNjLTg3N2MtZjg3YWQ4ZWYwNzljIiwidCI6IjU3MGE5MzFhLTEwMWYtNGJkYy04ZjE3LTRiMzEwMTE5MjU3MyJ9&amp;embedImagePlaceholder=true" allowfullscreen></iframe>
-          <button class="btn-fullscreen" onclick="toggleFrameFullscreen(this)">[EXPANDIR]</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal: Plataforma Executiva 360º — Gestão de SST -->
-  <div id="modal-plataformasst" class="modal-overlay" onclick="if(event.target == this) closeProjectModal('plataformasst')">
-    <div class="modal-content">
-      <button class="modal-close" onclick="closeProjectModal('plataformasst')">&times;</button>
-      <span class="tag tag-auto" style="margin-bottom:8px;">Automação + BI</span>
-      <h3 style="font-size: 24px; margin-bottom: 12px;">Plataforma Executiva 360º — Gestão de SST</h3>
-
-      <span class="modal-block-title">Diferenciais para o mercado</span>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        Nas corporações e consultorias de SST, a gestão de saúde ocupacional frequentemente sofre com dados estáticos e fragmentados, aprisionados em relatórios engessados do SOC que pouco se adaptam ao modelo de negócio de cada cliente. Esta solução transforma esse cenário ao criar uma camada de gestão flexível e dinâmica, onde os dados se convertem em indicadores estratégicos em tempo real.<br><br>
-        O grande diferencial não é apenas exibir um dashboard, mas sim entregar uma solução integrada que une dados, indicadores, automações contínuas e recomendações prescritivas. A aplicação identifica a situação crítica, executa a regra de negócio e aciona automaticamente os responsáveis para que o problema seja sanado antes que se transforme em passivo trabalhista ou autuação do eSocial.
-      </p>
-
-      <span class="modal-block-title">Complexidade técnica</span>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        A solução atua com visão 360º sobre o ciclo de SST: identifica a não conformidade, aplica regras de negócio, aciona os responsáveis por canal direto, monitora o desfecho e consolida a governança em painéis executivos. O modelo relacional Star Schema (4 tabelas fato e 4 dimensões) é otimizado para alta performance no motor VertiPaq, integrando um motor prescritivo em DAX que analisa causas raízes e sugere planos de ação direcionados por setor e unidade.<br><br>
-        Em paralelo, a camada de automação atua como guardiã ativa da operação: executa réguas de cobrança escalonadas por tempo de atraso (aging de ASO), calcula a exposição financeira estimada a multas do eSocial (eventos S-2220 e S-2240), aplica o algoritmo do Fator de Bradford para detectar absenteísmo crônico de curta duração e audita continuamente o SLA de laudos em clínicas credenciadas.
-      </p>
-
-      <span class="modal-block-title">Aplicação prática no mercado</span>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        Elimina o trabalho manual de cobrança e auditoria, reduz drasticamente o tempo de resposta da operação e previne o agravamento de passivos regulatórios e trabalhistas. Traduz pendências operacionais em risco financeiro mensurável para a diretoria, recalculando a exposição acumulada a multas com base nos pisos legais e fornecendo rastreabilidade total para auditorias.<br><br>
-        Entrega uma solução de governança ativa que converte o sistema de registro em um sistema de ação, garantindo aderência ao PCMSO, redução do absenteísmo e alocação inteligente do orçamento de saúde ocupacional.
-      </p>
-
-      <!-- Mídia 1: Power BI (Navegação pelos Indicadores) -->
-      <div class="media-container" style="margin-top: 24px;">
-        <span class="modal-block-title" style="margin-top:0;">[01] Indicadores Interativos — Navegação Direta</span>
-        <p style="color: var(--text-secondary); font-size: 13.5px; margin-bottom: 8px;">
-          Navegue diretamente pelos indicadores abaixo, alternando entre as abas e aplicando filtros para explorar a dinâmica da solução. <br>
-          <em style="color: #A0AABF; font-style: italic;">(Nota de Privacidade &amp; LGPD: Todos os dados, nomes de empresas e funcionários exibidos são 100% fictícios. Os cenários simulados foram estruturados a partir da extração e modelagem de telas e relatórios reais do sistema SOC — incluindo Tela 109 / Agenda de Convocação, Tela 223 / Exames Ocupacionais e ASOs, Tela 712 / Ficha Epidemiológica e Absenteísmo, acompanhamento de SLA no SOCNET e relatórios de exportação dos eventos S-2220 e S-2240 do eSocial).</em>
-        </p>
-        <div class="media-frame">
-          <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYTg5OTBmYTAtMWI4ZS00Mzk2LTliYWItYjU3ZWU4ZTkxN2UyIiwidCI6IjU3MGE5MzFhLTEwMWYtNGJkYy04ZjE3LTRiMzEwMTE5MjU3MyJ9" allowfullscreen></iframe>
-          <button class="btn-fullscreen" onclick="toggleFrameFullscreen(this)">[EXPANDIR]</button>
-        </div>
-      </div>
-
-      <!-- Mídia 2: Vídeos/Módulos com Contexto do SOC + Briefing Completo -->
-      <span class="modal-block-title" style="margin-top: 32px;">[02] Conteúdos &amp; Demonstrações em Vídeo</span>
-      <div class="modal-grid" style="margin-top: 12px;">
-
-        <!-- Vídeo 1: Visão Geral -->
-        <div class="media-container">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span class="modal-block-title" style="margin-top:0;">Vídeo 01 — Visão Geral 360º</span>
-            <span class="soon-pill" style="border-color: var(--accent); color: var(--accent);">Publicado</span>
-          </div>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 6px;">
-            <strong style="color: var(--text-primary);">Origem no SOC:</strong> Integração multifonte consolidada das principais rotinas operacionais (Tela 109 / Convocação, Tela 223 / Exames, Tela 712 / Afastamentos e eSocial).<br>
-            <strong style="color: var(--text-primary);">O que demonstra:</strong> Apresentação panorâmica da torre de controle executiva. Exibe a unificação dos KPIs estratégicos de conformidade, absenteísmo, SLA de credenciadas e risco de multas, demonstrando como dados transacionais brutos do SOC são convertidos em decisões imediatas para a diretoria.
-          </p>
-          <div class="media-frame">
-            <iframe src="https://www.youtube.com/embed/fa9QZRB7pW0" title="Plataforma Executiva SST - Visão Geral 360" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <button class="btn-fullscreen" onclick="toggleFrameFullscreen(this)">[EXPANDIR]</button>
-          </div>
-        </div>
-
-        <!-- Vídeo 2: Conformidade Legal -->
-        <div class="media-container">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span class="modal-block-title" style="margin-top:0;">Vídeo 02 — Conformidade Legal &amp; Régua ASO</span>
-            <span class="soon-pill" style="border-color: var(--accent); color: var(--accent);">Publicado</span>
-          </div>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 6px;">
-            <strong style="color: var(--text-primary);">Origem no SOC:</strong> Tela 109 (Agenda/Relatório de Convocação de Exames) e Tela 223 (Exames Ocupacionais / ASOs), utilizadas no dia a dia para controlar o vencimento e agendamento dos exames do PCMSO.<br>
-            <strong style="color: var(--text-primary);">O que demonstra:</strong> Monitoramento contínuo da taxa de conformidade e exames a vencer. Apresenta a regra de negócio automatizada da régua de cobrança por tempo de atraso (aging de ASO) e o acionamento direto dos gestores operacionais.
-          </p>
-          <div class="media-frame">
-            <iframe src="https://www.youtube.com/embed/T-hyK4JQ7gs" title="Plataforma Executiva SST - Conformidade Legal e Régua ASO" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <button class="btn-fullscreen" onclick="toggleFrameFullscreen(this)">[EXPANDIR]</button>
-          </div>
-        </div>
-
-        <!-- Vídeo 3: Absenteísmo Estratégico -->
-        <div class="media-container">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span class="modal-block-title" style="margin-top:0;">Vídeo 03 — Absenteísmo &amp; Fator de Bradford</span>
-            <span class="soon-pill" style="border-color: var(--accent); color: var(--accent);">Publicado</span>
-          </div>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 6px;">
-            <strong style="color: var(--text-primary);">Origem no SOC:</strong> Tela 712 (Ficha Epidemiológica / Registro de Atestados e Afastamentos), onde a equipe de saúde lança os atestados médicos, CIDs e motivos de ausência.<br>
-            <strong style="color: var(--text-primary);">O que demonstra:</strong> Análise analítica de absenteísmo com aplicação do algoritmo do Fator de Bradford. Identifica ausências crônicas de curta duração e alta frequência, permitindo que RH e medicina atuem na causa raiz antes da perda de produtividade.
-          </p>
-          <div class="media-frame">
-            <iframe src="https://www.youtube.com/embed/ydhN1M-Njl0" title="Plataforma Executiva SST - Absenteísmo e Fator de Bradford" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <button class="btn-fullscreen" onclick="toggleFrameFullscreen(this)">[EXPANDIR]</button>
-          </div>
-        </div>
-
-        <!-- Vídeo 4: Monitoramento Clínico -->
-        <div class="media-container">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span class="modal-block-title" style="margin-top:0;">Vídeo 04 — Monitoramento &amp; SLA Credenciadas</span>
-            <span class="soon-pill" style="border-color: var(--accent); color: var(--accent);">Publicado</span>
-          </div>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 6px;">
-            <strong style="color: var(--text-primary);">Origem no SOC:</strong> Rede Credenciada / SOCNET (Gestão de Prestadores e Ordens de Serviço), módulo responsável pelo envio de autorizações e acompanhamento de clínicas parceiras.<br>
-            <strong style="color: var(--text-primary);">O que demonstra:</strong> Auditoria operacional de tempo de atendimento. Mede o intervalo exato entre a realização do exame na clínica terceirizada e o retorno do laudo/ASO assinado no sistema, evidenciando gargalos e desvios de SLA contratual.
-          </p>
-          <div class="media-frame">
-            <iframe src="https://www.youtube.com/embed/za7XqCantwQ" title="Plataforma Executiva SST - Monitoramento Clínico e Régua de SLA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <button class="btn-fullscreen" onclick="toggleFrameFullscreen(this)">[EXPANDIR]</button>
-          </div>
-        </div>
-
-        <!-- Vídeo 5: Perfil Epidemiológico -->
-        <div class="media-container">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span class="modal-block-title" style="margin-top:0;">Vídeo 05 — Perfil Epidemiológico &amp; Prevenção</span>
-            <span class="soon-pill" style="border-color: var(--accent); color: var(--accent);">Publicado</span>
-          </div>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 6px;">
-            <strong style="color: var(--text-primary);">Origem no SOC:</strong> Relatórios Epidemiológicos estruturados a partir das Telas 712 (Atestados) e 223 (Exames Ocupacionais Alterados).<br>
-            <strong style="color: var(--text-primary);">O que demonstra:</strong> Inteligência populacional de saúde. Mapeia a prevalência de patologias por grupo de CIDs e alteração de exames complementares por setor, sustentando programas preventivos de saúde e a revisão do PCMSO e PGR.
-          </p>
-          <div class="media-frame">
-            <iframe src="https://www.youtube.com/embed/njVGPM5gqwE" title="Plataforma Executiva SST - Perfil Epidemiológico e Prevenção" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <button class="btn-fullscreen" onclick="toggleFrameFullscreen(this)">[EXPANDIR]</button>
-          </div>
-        </div>
-
-        <!-- Vídeo 6: Camada Financeira -->
-        <div class="media-container">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span class="modal-block-title" style="margin-top:0;">Vídeo 06 — Camada Financeira &amp; Multas eSocial</span>
-            <span class="soon-pill" style="border-color: var(--accent); color: var(--accent);">Publicado</span>
-          </div>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 6px;">
-            <strong style="color: var(--text-primary);">Origem no SOC:</strong> Módulo eSocial — Exportação e Controle de Lotes dos Eventos S-2220 (Saúde do Trabalhador) e S-2240 (Condições Ambientais).<br>
-            <strong style="color: var(--text-primary);">O que demonstra:</strong> Precificação automática do risco fiscal. Traduz pendências operacionais em exposição financeira acumulada por multas do eSocial, recalculando os valores com base nas tabelas regulatórias do governo.
-          </p>
-          <div class="media-frame">
-            <iframe src="https://www.youtube.com/embed/Un_abKc-8gM" title="Plataforma Executiva SST - Camada Financeira e Multas eSocial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <button class="btn-fullscreen" onclick="toggleFrameFullscreen(this)">[EXPANDIR]</button>
-          </div>
-        </div>
-
-        <!-- Vídeo 7: Governança & Automação -->
-        <div class="media-container">
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <span class="modal-block-title" style="margin-top:0;">Vídeo 07 — Governança &amp; Automação</span>
-            <span class="soon-pill" style="border-color: var(--accent); color: var(--accent);">Publicado</span>
-          </div>
-          <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 6px;">
-            <strong style="color: var(--text-primary);">Origem na Automação:</strong> Camada de governança ativa que atua sobre os mesmos dados do dashboard, formada por três automações independentes: a Régua de Passivo ASO (escalonamento diário por tier de atraso e cálculo de exposição a multa do eSocial), o Radar de Bradford (triagem semanal de recorrência de afastamentos com apoio de IA para a entrevista de retorno ao trabalho) e a Régua de SLA de Credenciadas (auditoria diária de laudos pendentes e gaps de cobertura regional).<br>
-            <strong style="color: var(--text-primary);">O que demonstra:</strong> Como o ecossistema deixa de ser um painel de leitura passiva e passa a agir sozinho. Mostra o disparo automático de cobranças ao gestor responsável, o escalonamento hierárquico até a Diretoria nos casos críticos, a abertura de casos para o SESMT e o registro de cada ação em log de auditoria — fechando o ciclo entre identificar o problema, notificar o responsável certo e comprovar a rastreabilidade da resolução.
-          </p>
-          <div class="media-frame">
-            <iframe src="https://www.youtube.com/embed/le85n_fnWz8" title="Plataforma Executiva SST - Governança e Automação" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <button class="btn-fullscreen" onclick="toggleFrameFullscreen(this)">[EXPANDIR]</button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal: AgendaSST.AI -->
-  <div id="modal-agendasst" class="modal-overlay" onclick="if(event.target == this) closeProjectModal('agendasst')">
-    <div class="modal-content">
-      <button class="modal-close" onclick="closeProjectModal('agendasst')">&times;</button>
-      <span class="tag tag-auto" style="margin-bottom:8px;">Automação + BI</span>
-      <h3 style="font-size: 24px; margin-bottom: 12px;">AgendaSST.AI — Inteligência de Agendamento</h3>
-
-      <span class="modal-block-title">Diferenciais para o mercado</span>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        O agendamento de exames ocupacionais (admissionais, periódicos, demissionais) ainda depende, na maioria das clínicas e consultorias de SST, de trocas manuais de mensagens por WhatsApp e e-mail, com analistas conferindo disponibilidade em planilhas e digitando cada reserva — processo lento, sujeito a erro de CPF e sem rastreabilidade de SLA.
-      </p>
-
-      <span class="modal-block-title">Complexidade técnica</span>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        Ecossistema orientado a eventos construído em n8n com agente de IA (LangChain + GPT-4.1-mini) que interpreta linguagem natural, consulta disponibilidade e executa o agendamento sem intervenção humana. Um segundo fluxo processa ASOs assinados por convenção de nomenclatura de arquivo, atualiza status via eSocial (S-2220/NR-7) e dispara confirmação multicanal. A camada analítica em Power BI roda sobre modelo Star Schema com relacionamento ativo/inativo (USERELATIONSHIP) para separar data de solicitação e data de execução.
-      </p>
-
-      <span class="modal-block-title">Aplicação prática no mercado</span>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        Reduz o lead time de resposta de dias para segundos, elimina erro humano de digitação e entrega à diretoria um painel de SLA, funil de conversão da IA e ROI financeiro da automação frente ao custo de um atendente humano — métricas que sustentam decisão de investimento em automação para operações de saúde ocupacional de qualquer porte.
-      </p>
-
-      <div class="modal-grid">
-        <div class="media-container">
-          <span class="modal-block-title" style="margin-top:0;">[01] Engenharia de Automação (n8n)</span>
-          <div class="media-frame">
-            <iframe src="https://www.youtube.com/embed/dZum2oeQPL8" title="AgendaSST.AI - Engenharia de Automação" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <button class="btn-fullscreen" onclick="toggleFrameFullscreen(this)">[EXPANDIR]</button>
-          </div>
-        </div>
-        
-        <div class="media-container">
-          <span class="modal-block-title" style="margin-top:0;">[02] Visão Analítica (Power BI)</span>
-          <div class="media-frame">
-            <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZTBjMTA0NzktMjM4ZC00MTMxLWFlYWUtZTg4Zjc3OGZlZTExIiwidCI6IjU3MGE5MzFhLTEwMWYtNGJkYy04ZjE3LTRiMzEwMTE5MjU3MyJ9&amp;embedImagePlaceholder=true" allowfullscreen></iframe>
-            <button class="btn-fullscreen" onclick="toggleFrameFullscreen(this)">[EXPANDIR]</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal: Projeto EKÓ -->
-  <div id="modal-eko" class="modal-overlay" onclick="if(event.target == this) closeProjectModal('eko')">
-    <div class="modal-content">
-      <button class="modal-close" onclick="closeProjectModal('eko')">&times;</button>
-      <span class="tag tag-auto" style="margin-bottom:8px;">Automação + BI</span>
-      <h3 style="font-size: 24px; margin-bottom: 12px;">Projeto EKÓ — Impacto Social &amp; Operação</h3>
-
-      <span class="modal-block-title">Diferenciais para o mercado</span>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        Iniciativas de impacto social geralmente processam inscrições e termos de consentimento manualmente, sem estrutura de dados consolidada. Isso limita a capacidade de comprovar alcance e representatividade para relatórios de captação de recursos junto a patrocinadores e editais.
-      </p>
-
-      <span class="modal-block-title">Complexidade técnica</span>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        Ecossistema em n8n que centraliza respostas de Google Forms, aciona OCR autônomo para validação de termos e documentos, e usa IA generativa (Groq) para gerar comunicação personalizada e disparo de material educativo por Gmail em menos de 15 minutos. Os dados consolidados alimentam um painel em Power BI com indicadores de clima emocional, NPS e distribuição demográfica.
-      </p>
-
-      <span class="modal-block-title">Aplicação prática no mercado</span>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        Elimina o trabalho manual de triagem e comunicação da equipe do projeto social, reduz o tempo de resposta ao participante para minutos e entrega à coordenação um painel pronto para relatórios de impacto e prestação de contas a financiadores — um modelo replicável para qualquer operação social ou ONG que dependa de formulários e comunicação em escala.
-      </p>
-
-      <div class="modal-grid">
-        <div class="media-container">
-          <span class="modal-block-title" style="margin-top:0;">[01] Fluxo de OCR e Validação (n8n)</span>
-          <div class="media-frame">
-            <iframe src="https://www.youtube.com/embed/wMwexjyQhlM" title="Projeto EKÓ - Fluxo de OCR e Validação" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <button class="btn-fullscreen" onclick="toggleFrameFullscreen(this)">[EXPANDIR]</button>
-          </div>
-        </div>
-        
-        <div class="media-container">
-          <span class="modal-block-title" style="margin-top:0;">[02] Painel Demográfico (Power BI)</span>
-          <div class="media-frame">
-            <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYzUwNmY0ZmItNDcwMC00M2NmLWJlMjItZTMzYmQxODZjNzJjIiwidCI6IjU3MGE5MzFhLTEwMWYtNGJkYy04ZjE3LTRiMzEwMTE5MjU3MyJ9&amp;embedImagePlaceholder=true" allowfullscreen></iframe>
-            <button class="btn-fullscreen" onclick="toggleFrameFullscreen(this)">[EXPANDIR]</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal: Radar Prata da Casa -->
-  <div id="modal-radarprata" class="modal-overlay" onclick="if(event.target == this) closeProjectModal('radarprata')">
-    <div class="modal-content modal-narrow">
-      <button class="modal-close" onclick="closeProjectModal('radarprata')">&times;</button>
-      <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
-        <span class="tag tag-auto">Automação + BI</span>
-        <span class="soon-pill">Em breve</span>
-      </div>
-      <h3 style="font-size: 24px; margin-bottom: 12px;">Radar Prata da Casa — Observatório de Talentos Brasileiros</h3>
-
-      <span class="modal-block-title">Diferenciais para o mercado</span>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        Jogadores brasileiros que se destacam em ligas menores ou divisões de acesso costumam passar despercebidos pelo público e por analistas convencionais, por falta de dados consolidados e narrativas analíticas unificadas sobre o desempenho de atletas nacionais espalhados pelo mundo.
-      </p>
-
-      <span class="modal-block-title">Complexidade técnica</span>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        Automação semanal no n8n consome dados de APIs esportivas gratuitas, filtra o top de artilharia e assistência das 12 principais competições cobertas e envia as informações a um agente de IA, que compara os dados com o histórico de Copas passadas para encontrar anomalias positivas de performance.
-      </p>
-
-      <span class="modal-block-title">Aplicação prática no mercado</span>
-      <p style="color: var(--text-secondary); font-size: 14px;">
-        Portal analítico de scouting com relatórios de IA que narram quem está subindo de nível e quais jogadores devem entrar no radar do futebol nacional — prova de engenharia de dados aplicada a limites estritos de API, Star Schema e enrichment de texto por IA.
-      </p>
-    </div>
-  </div>
-
-  <!-- Modal: Outros Projetos em Desenvolvimento -->
-  <div id="modal-outrosprojetos" class="modal-overlay" onclick="if(event.target == this) closeProjectModal('outrosprojetos')">
-    <div class="modal-content">
-      <button class="modal-close" onclick="closeProjectModal('outrosprojetos')">&times;</button>
-      <span class="tag tag-dev" style="margin-bottom:8px;">Roadmap</span>
-      <h3 style="font-size: 24px; margin-bottom: 6px;">Outros Projetos em Desenvolvimento</h3>
-      <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 20px;">Próximos projetos autorais do pipeline, com um resumo rápido de cada um.</p>
-
-      <ul class="others-list">
-        <li>
-          <h4>Anti Fraude Logística</h4>
-          <p>Robô auditor que cruza logs operacionais de rastreio em tempo real, detecta reversões contratuais impossíveis (como um "insucesso" virando "entregue" em minutos) e expõe o prejuízo financeiro recuperado em uma matriz de risco de transportadoras.</p>
-        </li>
-        <li>
-          <h4>Distribuidor Inteligente de Leads &amp; Custo de Inação (COI)</h4>
-          <p>Roteamento dinâmico de leads por carga de trabalho dos SDRs, com painel em Power BI que calcula em tempo real a perda financeira estimada por cada minuto de atraso no primeiro contato comercial.</p>
-        </li>
-        <li>
-          <h4>Simulador de House Edge — Análise Crítica do Mercado de Bets</h4>
-          <p>Motor de simulação matemática com apostadores sintéticos (conservador, moderado e agressivo) que desconstrói a margem oculta das casas de apostas e demonstra visualmente a taxa de ruína no longo prazo.</p>
-        </li>
-        <li>
-          <h4>Distribuidor Inteligente de Instruções de Trabalho</h4>
-          <p>Triagem cognitiva que interpreta semanticamente chamados de suporte via IA, associa o texto livre à instrução de trabalho correspondente e envia o procedimento certo direto para o operador logístico.</p>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- ===========================================================
-       ESTRUTURA DOS MODAIS DE CURSOS
-       =========================================================== -->
-
-  <!-- n8n -->
-  <div id="modal-course-n8n" class="modal-overlay" onclick="if(event.target == this) closeCourseModal('n8n')">
-    <div class="modal-content modal-narrow">
-      <button class="modal-close" onclick="closeCourseModal('n8n')">&times;</button>
-      <span class="course-status status-done" style="float:none; display:inline-block; margin-bottom:8px;">Concluído</span>
-      <h3 style="font-size: 22px; margin-bottom: 4px;">Formação n8n 2026: Automação e Criação de Agentes de IA (70h)</h3>
-      <p style="color: var(--text-secondary); font-size: 13px; margin-top: 8px;">O que foi aprendido:</p>
-      <ul class="topic-list">
-        <li>Webhooks, triggers e arquitetura orientada a eventos</li>
-        <li>HTTP Request e integração de APIs REST</li>
-        <li>Google Sheets, Drive e Gmail como fontes/destinos de dados</li>
-        <li>Lógica condicional com IF, Switch e Merge</li>
-        <li>Code node (JavaScript) para tratamento e transformação de dados</li>
-        <li>AI Agents com LangChain (raciocínio ReAct) e Tools customizadas</li>
-        <li>Memória de conversação (Buffer Window) por sessão de usuário</li>
-        <li>Deploy e orquestração de containers via Docker</li>
-        <li>Boas práticas de tratamento de erro e reprocessamento de falhas</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Power BI -->
-  <div id="modal-course-powerbi" class="modal-overlay" onclick="if(event.target == this) closeCourseModal('powerbi')">
-    <div class="modal-content modal-narrow">
-      <button class="modal-close" onclick="closeCourseModal('powerbi')">&times;</button>
-      <span class="course-status status-done" style="float:none; display:inline-block; margin-bottom:8px;">Concluído</span>
-      <h3 style="font-size: 22px; margin-bottom: 4px;">Microsoft Power BI Para Business Intelligence e Data Science</h3>
-      <p style="color: var(--text-secondary); font-size: 13px; margin-top: 8px;">O que foi aprendido:</p>
-      <ul class="topic-list">
-        <li>Modelagem dimensional (Star Schema) e boas práticas de relacionamento</li>
-        <li>ETL em Power Query (linguagem M) e higienização de dados</li>
-        <li>DAX: medidas, variáveis, contexto de linha e contexto de filtro</li>
-        <li>Relacionamentos ativos/inativos e USERELATIONSHIP</li>
-        <li>Visualizações avançadas e storytelling de dados</li>
-        <li>Segurança em nível de linha (Row-Level Security)</li>
-        <li>Publicação, atualização e governança no Power BI Service</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- SQL -->
-  <div id="modal-course-sql" class="modal-overlay" onclick="if(event.target == this) closeCourseModal('sql')">
-    <div class="modal-content modal-narrow">
-      <button class="modal-close" onclick="closeCourseModal('sql')">&times;</button>
-      <span class="course-status status-doing" style="float:none; display:inline-block; margin-bottom:8px;">Cursando</span>
-      <h3 style="font-size: 22px; margin-bottom: 4px;">SQL para Análise de Dados (SQL Completo)</h3>
-      <p style="color: var(--text-secondary); font-size: 13px; margin-top: 8px;">
-        SQL é a linguagem padrão de mercado para consulta, modelagem e governança de dados em qualquer ambiente corporativo — do Power BI a sistemas transacionais de grande porte. Domínio consolidado amplia diretamente minha capacidade de estruturar soluções de BI e automação sobre bancos de dados reais, e não apenas sobre planilhas.
-      </p>
-      <p style="color: var(--text-secondary); font-size: 13px; margin-top: 16px;">Progresso atual:</p>
-      <ul class="topic-list">
-        <li>✔ Fundamentos: SELECT, WHERE, ORDER BY, JOINs</li>
-        <li>✔ Agregações com GROUP BY e HAVING</li>
-        <li>✔ Subqueries e CTEs (Common Table Expressions)</li>
-        <li>▸ Window Functions (em andamento)</li>
-        <li>▸ Stored Procedures e Views (em andamento)</li>
-        <li>○ Otimização de queries e índices (próxima etapa)</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- C# -->
-  <div id="modal-course-csharp" class="modal-overlay" onclick="if(event.target == this) closeCourseModal('csharp')">
-    <div class="modal-content modal-narrow">
-      <button class="modal-close" onclick="closeCourseModal('csharp')">&times;</button>
-      <span class="course-status status-queue" style="float:none; display:inline-block; margin-bottom:8px;">Adquirido</span>
-      <h3 style="font-size: 22px; margin-bottom: 4px;">C# COMPLETO (Programação Orientada a Objetos + Projetos)</h3>
-      <p style="color: var(--text-secondary); font-size: 13px; margin-top: 8px;">O que será aprendido:</p>
-      <ul class="topic-list">
-        <li>Fundamentos de C# e da plataforma .NET</li>
-        <li>Programação Orientada a Objetos: herança, polimorfismo, interfaces</li>
-        <li>Coleções, generics e LINQ</li>
-        <li>Projetos práticos console e desktop</li>
-        <li>Boas práticas de Clean Code e organização de projeto</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Web API -->
-  <div id="modal-course-webapi" class="modal-overlay" onclick="if(event.target == this) closeCourseModal('webapi')">
-    <div class="modal-content modal-narrow">
-      <button class="modal-close" onclick="closeCourseModal('webapi')">&times;</button>
-      <span class="course-status status-queue" style="float:none; display:inline-block; margin-bottom:8px;">Adquirido</span>
-      <h3 style="font-size: 22px; margin-bottom: 4px;">Curso Web API ASP .NET Core Essencial (.NET 8 / .NET 9)</h3>
-      <p style="color: var(--text-secondary); font-size: 13px; margin-top: 8px;">O que será aprendido:</p>
-      <ul class="topic-list">
-        <li>Criação de APIs REST com ASP.NET Core</li>
-        <li>Entity Framework Core e persistência de dados</li>
-        <li>Autenticação e autorização com JWT</li>
-        <li>Injeção de dependência e arquitetura em camadas</li>
-        <li>Documentação de API com Swagger</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Excel -->
-  <div id="modal-course-excel" class="modal-overlay" onclick="if(event.target == this) closeCourseModal('excel')">
-    <div class="modal-content modal-narrow">
-      <button class="modal-close" onclick="closeCourseModal('excel')">&times;</button>
-      <span class="course-status status-queue" style="float:none; display:inline-block; margin-bottom:8px;">Adquirido</span>
-      <h3 style="font-size: 22px; margin-bottom: 4px;">Excel do Básico ao Avançado, Macro e VBA + Power BI</h3>
-      <p style="color: var(--text-secondary); font-size: 13px; margin-top: 8px;">O que será aprendido:</p>
-      <ul class="topic-list">
-        <li>Fórmulas avançadas e tabelas dinâmicas</li>
-        <li>Automação de planilhas com Macros e VBA</li>
-        <li>Modelagem de dados no Excel com Power Pivot</li>
-        <li>Integração entre Excel e Power BI</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Prompt Engineering -->
-  <div id="modal-course-prompt" class="modal-overlay" onclick="if(event.target == this) closeCourseModal('prompt')">
-    <div class="modal-content modal-narrow">
-      <button class="modal-close" onclick="closeCourseModal('prompt')">&times;</button>
-      <span class="course-status status-queue" style="float:none; display:inline-block; margin-bottom:8px;">Adquirido</span>
-      <h3 style="font-size: 22px; margin-bottom: 4px;">Engenharia de Prompts (Prompt Engineering)</h3>
-      <p style="color: var(--text-secondary); font-size: 13px; margin-top: 8px;">O que será aprendido:</p>
-      <ul class="topic-list">
-        <li>Técnicas de prompting: few-shot, chain-of-thought</li>
-        <li>Estruturação de system prompts para agentes de IA</li>
-        <li>Function calling e uso de ferramentas (tool use)</li>
-        <li>Avaliação e iteração de prompts em ambiente de produção</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Desenvolvimento Web -->
-  <div id="modal-course-webdev" class="modal-overlay" onclick="if(event.target == this) closeCourseModal('webdev')">
-    <div class="modal-content modal-narrow">
-      <button class="modal-close" onclick="closeCourseModal('webdev')">&times;</button>
-      <span class="course-status status-queue" style="float:none; display:inline-block; margin-bottom:8px;">Adquirido</span>
-      <h3 style="font-size: 22px; margin-bottom: 4px;">Desenvolvimento Web Completo</h3>
-      <p style="color: var(--text-secondary); font-size: 13px; margin-top: 8px;">O que será aprendido:</p>
-      <ul class="topic-list">
-        <li>HTML5, CSS3 e JavaScript</li>
-        <li>Fundamentos de front-end responsivo</li>
-        <li>Consumo de APIs no front-end</li>
-        <li>Fundamentos de back-end e integração ponta a ponta</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Lógica de Programação -->
-  <div id="modal-course-logica" class="modal-overlay" onclick="if(event.target == this) closeCourseModal('logica')">
-    <div class="modal-content modal-narrow">
-      <button class="modal-close" onclick="closeCourseModal('logica')">&times;</button>
-      <span class="course-status status-queue" style="float:none; display:inline-block; margin-bottom:8px;">Adquirido</span>
-      <h3 style="font-size: 22px; margin-bottom: 4px;">Algoritmo e Lógica de Programação</h3>
-      <p style="color: var(--text-secondary); font-size: 13px; margin-top: 8px;">O que será aprendido:</p>
-      <ul class="topic-list">
-        <li>Estruturas de decisão e repetição</li>
-        <li>Estruturas de dados básicas (vetores, listas)</li>
-        <li>Lógica de resolução de problemas</li>
-        <li>Base conceitual reaproveitável para qualquer linguagem</li>
-      </ul>
-    </div>
-  </div>
-
-  <script>
-    function openProjectModal(name) {
-      var modal = document.getElementById('modal-' + name);
-      if (!modal) return;
-      modal.classList.add('is-open');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeProjectModal(name) {
-      var modal = document.getElementById('modal-' + name);
-      if (!modal) return;
-      modal.classList.remove('is-open');
-      document.body.style.overflow = '';
-    }
-
-    function openCourseModal(name) {
-      var modal = document.getElementById('modal-course-' + name);
-      if (!modal) return;
-      modal.classList.add('is-open');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeCourseModal(name) {
-      var modal = document.getElementById('modal-course-' + name);
-      if (!modal) return;
-      modal.classList.remove('is-open');
-      document.body.style.overflow = '';
-    }
-
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') {
-        document.querySelectorAll('.modal-overlay.is-open').forEach(function (modal) {
-          modal.classList.remove('is-open');
-        });
-        document.body.style.overflow = '';
-      }
-    });
-
-    function toggleFrameFullscreen(btn) {
-      var frame = btn.closest('.media-frame');
-      if (!frame) return;
-      var isFullscreen = document.fullscreenElement || document.webkitFullscreenElement;
-      if (!isFullscreen) {
-        var request = frame.requestFullscreen || frame.webkitRequestFullscreen;
-        if (request) request.call(frame);
-      } else {
-        var exit = document.exitFullscreen || document.webkitExitFullscreen;
-        if (exit) exit.call(document);
-      }
-    }
-  </script>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<header class="top"><div class="w">
+<strong>Victor Hugo Monteiro</strong>
+<nav aria-label="Principal"><ul>
+<li><a href="#historia">Minha história</a></li><li><a href="#projetos">Projetos</a></li><li><a href="#competencias">Competências</a></li><li><a href="#certificacoes">Certificações</a></li><li><a href="#contato">Contato</a></li>
+</ul></nav></div></header>
+
+<main id="main">
+<div class="w">
+<div class="hero">
+<div>
+<p class="name">Victor Hugo Monteiro</p>
+<h1>Dado manual ou disperso vira indicador e, depois, ação automatizada.</h1>
+<p class="roles">Analista de BI, Analista de Dados e Analista de Automação e IA</p>
+<p class="lede">Trabalho com Power BI (DAX e Power Query), n8n e agentes de IA para transformar dado solto em indicador e em ação. Minha base está em duas operações que vivem de dado: a saúde e segurança do trabalho (SST) e o e-commerce. Nelas aprendi como é o dado que chega manual, disperso e sem dono, e como um indicador bem construído muda a decisão.</p>
+<p class="lede">Hoje levo essa forma de trabalhar para qualquer operação, porque toda operação depende de dados. Estou numa trilha contínua de estudos (SQL, Python, Excel, desenvolvimento web, C# e APIs) e coloco cada formação à prova em projetos úteis.</p>
+<p class="meta">Santo André/SP. Disponível para vagas presenciais, híbridas ou remotas, em CLT ou PJ.</p>
+<div class="btns"><a class="btn p" href="#historia">Ler minha história</a><a class="btn s" href="#projetos">Ver projetos</a><a class="btn s" href="https://www.linkedin.com/in/victor-monteiro-6816b5192/" target="_blank" rel="noopener">Falar no LinkedIn</a></div>
+</div>
+<img src="assets/e99a8db8-61e0-467b-b9a2-cb44faae0d20.jpg" width="210" height="280" alt="Retrato de Victor Hugo Monteiro" decoding="async">
+</div>
+</div>
+
+<div class="w"><div class="skills" role="region" aria-labelledby="hs"><h2 id="hs">Minhas principais habilidades</h2><p class="note">Autoavaliação pessoal, de 0 a 100%.</p><ul class="sk"><li style="--v:100%"><div class="sh"><span class="sn"><img class="ico" src="assets/logos/engenharia-de-prompt.svg" alt="" width="22" height="22" loading="lazy">Engenharia de Prompt</span></div><div class="trk"><i class="fl"></i><span class="pc">100%</span></div></li><li style="--v:90%"><div class="sh"><span class="sn"><img class="ico" src="assets/logos/power-bi.svg" alt="" width="22" height="22" loading="lazy">Microsoft Power BI</span></div><div class="trk"><i class="fl"></i><span class="pc">90%</span></div></li><li style="--v:70%"><div class="sh"><span class="sn"><img class="ico" src="assets/logos/n8n.svg" alt="" width="22" height="22" loading="lazy">n8n</span></div><div class="trk"><i class="fl"></i><span class="pc">70%</span></div></li><li style="--v:30%"><div class="sh"><span class="sn"><img class="ico" src="assets/logos/sql.svg" alt="" width="22" height="22" loading="lazy">SQL</span><span class="bd">Em formação</span></div><div class="trk"><i class="fl"></i><span class="pc">30%</span></div></li></ul></div></div>
+
+<section id="historia"><div class="w">
+<h2>Minha história com dados</h2>
+<p class="sub">Sempre enxerguei o problema por trás do processo. Em cada empresa por onde passei o caminho foi o mesmo: entender a dor, estruturar o dado, entregar o indicador e, quando possível, automatizar a ação.</p>
+<div class="story">
+<div class="chap">
+<h3>Onde aprendi a dor do dado manual</h3>
+<p>Comecei em SST em funções administrativas, onde dados de campo e relatórios chegavam em papel e planilha. Ali vi de perto o quanto uma decisão depende de o dado chegar certo, e foi ali que conheci o Power BI.</p>
+</div>
+<div class="chap">
+<h3>3Cliques: processo, equipe e indicador</h3>
+<p class="when">06/2024 a 03/2025, Analista de Backoffice</p>
+<p>Em uma operação de dropshipping Brasil-China, entrei quando suporte, logística e estoque ainda não tinham processos formais. Participei da estruturação do Backoffice do zero: levantei os gargalos entre as áreas e formalizei SLAs internos com financeiro, compras, logística e TI.</p>
+<p>Coordenei, ao lado de um par, uma equipe de 6 a 8 analistas de suporte, com stand-ups diários, treinamentos e guias de onboarding, e assumia os casos críticos de clientes. No CRM Octadesk, configurei filas e regras de distribuição de chamados; em Power BI, construí dashboards de produtividade, tempo de resposta e SLA. Na rotina de estoque, aprendi na prática o ERP Mabeng, um sistema chinês.</p>
+<p>Em 2025 conduzi também uma auditoria de dados logísticos e encontrei divergências sistemáticas nos relatórios de uma transportadora parceira: pedidos de insucesso ou devolução apareciam como entregues. Cruzei planilhas, conciliei a volumetria e corrigi a apuração dos indicadores de entrega.</p>
+<ul class="chips"><li><img class="ico" src="assets/logos/octadesk.svg" alt="" width="22" height="22" loading="lazy">CRM Octadesk</li><li><img class="ico" src="assets/logos/power-bi.svg" alt="" width="22" height="22" loading="lazy">Power BI</li><li><img class="ico" src="assets/logos/mabeng.svg" alt="" width="22" height="22" loading="lazy">ERP Mabeng</li><li><img class="ico" src="assets/logos/sla.svg" alt="" width="22" height="22" loading="lazy">SLA</li><li><img class="ico" src="assets/logos/auditoria-de-dados.svg" alt="" width="22" height="22" loading="lazy">Auditoria de dados</li><li><img class="ico" src="assets/logos/lideranca-de-equipe.svg" alt="" width="22" height="22" loading="lazy">Liderança de equipe</li></ul>
+</div>
+<div class="chap key">
+<h3>GRS+Núcleo: desenvolvedor de BI</h3>
+<p class="when">08/2025 a 03/2026 (8 meses), Desenvolvedor júnior, atuação em Business Intelligence com Power BI</p>
+<p>Fui o único desenvolvedor da área e a referência em BI da empresa. Respondia diretamente à diretoria, participava de reuniões entre as áreas e construía indicadores sob demanda para cada uma delas, do levantamento do requisito com o gestor à entrega do painel. Trabalhei em conjunto com ferramentas de IA para ganhar performance e qualidade nas entregas.</p>
+<ul>
+<li>Plataforma gerencial de SST: criei de forma autônoma, com dados extraídos do SOC (software de gestão de saúde e segurança do trabalho), a visão de conformidade de exames, absenteísmo, acidentes e vigência de PCMSO e LTCAT (planilha em SharePoint integrada ao painel), com filtros por unidade, setor e período. Foi usada por uma grande multinacional e ficou pronta para ser replicada nas demais empresas clientes.</li>
+<li>Mapeamento Psicossocial (NR-01): os indicadores do SOC eram rígidos e não cobriam todos os modelos de pesquisa. Reconstruí o produto do zero como um painel adaptável às metodologias de avaliação (como HSE-IT e COPSOQ), com indicadores de engajamento e vulnerabilidade por setor e um motor de recomendação que cruza categoria psicossocial e nível de risco para indicar a ação e o responsável (RH, liderança ou SESMT). Atendeu empresas nacionais e multinacionais de ramos diferentes, porque o que importava era o dado da pesquisa, não o setor.</li>
+<li>Painel de Customer Success (experiência do cliente), criado a pedido da área, e dashboard gerencial de uma conta agropecuária, com exames e absenteísmo em 5 localidades. Criei também um template reutilizável para acelerar novos painéis.</li>
+<li>Participei de reuniões com a diretoria, incluindo a avaliação técnica de uma proposta de upgrade de infraestrutura.</li>
+</ul>
+<ul class="chips"><li><img class="ico" src="assets/logos/power-bi.svg" alt="" width="22" height="22" loading="lazy">Power BI</li><li><img class="ico" src="assets/logos/dax.svg" alt="" width="22" height="22" loading="lazy">DAX</li><li><img class="ico" src="assets/logos/power-query.svg" alt="" width="22" height="22" loading="lazy">Power Query</li><li><img class="ico" src="assets/logos/modelagem-dimensional.svg" alt="" width="22" height="22" loading="lazy">Modelagem de dados e dimensional</li><li><img class="ico" src="assets/logos/soc.svg" alt="" width="22" height="22" loading="lazy">SOC</li><li><img class="ico" src="assets/logos/excel.svg" alt="" width="22" height="22" loading="lazy">Excel</li><li><img class="ico" src="assets/logos/sharepoint.svg" alt="" width="22" height="22" loading="lazy">SharePoint</li><li><img class="ico" src="assets/logos/requisitos.svg" alt="" width="22" height="22" loading="lazy">Levantamento de requisitos</li><li><img class="ico" src="assets/logos/comunicacao.svg" alt="" width="22" height="22" loading="lazy">Comunicação com a diretoria</li></ul>
+</div>
+<div class="chap">
+<h3>Aprender construindo, sempre</h3>
+<p>Antes do GRS eu já construía projetos, e foram eles que me abriram essa porta. Desde então não parei: tudo o que aprendo no trabalho e em cada curso eu quero evidenciar em projetos. Os de SST nascem das empresas por onde passei, mas não usam nenhum dado delas. Trabalho com dados fictícios e públicos, para que cada projeto seja algo que se possa mostrar.</p>
+</div>
+</div>
+</div></section>
+
+<section id="projetos"><div class="w">
+<h2>Projetos</h2>
+<p class="sub">Como solucionador de problemas, sempre identifiquei dores nas empresas em que trabalhei, e não fiquei só observando. O que aprendi no trabalho e em cada curso eu coloco à prova em projetos úteis, que funcionam e resolvem problemas do mercado. Os de SST nascem da minha experiência. Virão novos projetos, de outras áreas, a cada formação concluída.</p>
+<p class="guide">Como explorar: em cada projeto, o botão sólido abre o <strong>painel interativo</strong> (o dashboard, com filtros e abas) e os botões com contorno abrem <strong>vídeos explicativos</strong>. Tudo abre aqui mesmo, logo abaixo dos botões.</p>
+<div class="cases">
+<article class="case" style="--a:#2F4A9B" aria-labelledby="c2"><span class="tag t-f">Dados fictícios</span><h3 id="c2">Mapeamento de Riscos Psicossociais (NR-01)</h3><h4>Problema</h4><p>A Portaria MTE nº 1.419/2024 incluiu os fatores de risco psicossociais no Gerenciamento de Riscos Ocupacionais da NR-1, e a Portaria MTE nº 765/2025 fixou o início da vigência desse capítulo em 26/05/2026. Na prática, cada empresa pedia indicadores próprios e o SOC entregava relatórios rígidos, que não cobriam todos os modelos de pesquisa. Cada novo cliente virava um relatório sob medida, as respostas ficavam espalhadas em planilhas e ninguém via o quadro geral por setor. Ficava sem resposta a pergunta que importa: o que fazer primeiro e quem faz.</p><h4>O que construí</h4><p>Um produto, não um relatório: uma estrutura única (esquema estrela com 1 fato e 8 dimensões e mais de 20 medidas DAX) que se adapta às metodologias de avaliação e se replica para cada empresa sem refazer o painel. Criei a regra de médias e pontuação e um motor de recomendação que cruza a categoria psicossocial com o nível de risco e devolve a ação, o impacto esperado e o responsável (RH, liderança ou SESMT).</p><h4>O que entrega</h4><p>Para o gestor, um quadro único de adesão, risco e vulnerabilidade por setor. Para RH e SESMT, uma fila de prioridades com ação e responsável definidos, em vez de uma tabela para interpretar. Para a empresa, um registro estruturado que apoia a gestão e a priorização das intervenções.</p><h4>O que o dashboard mostra</h4><ul class="pts"><li>Visão geral: média geral, percentual de adesão, período da pesquisa, quem respondeu e quem não respondeu, volume mensal de respostas e distribuição por nível de risco.</li><li>Avaliação: heatmap de risco por setor e categoria, ranking de vulnerabilidade, setores em alerta, tendência temporal, 5 maiores pontos de melhoria e 5 maiores fortalezas.</li><li>Matriz de desempenho setorial e performance por categoria.</li><li>Ação e monitoramento: priorização da intervenção em gráfico de dispersão, regra de recomendação, impacto esperado e catálogo de diretrizes filtrável por unidade e setor.</li></ul><ul class="chips"><li><img class="ico" src="assets/logos/power-bi.svg" alt="" width="22" height="22" loading="lazy">Power BI</li><li><img class="ico" src="assets/logos/dax.svg" alt="" width="22" height="22" loading="lazy">DAX</li><li><img class="ico" src="assets/logos/modelagem-dimensional.svg" alt="" width="22" height="22" loading="lazy">Modelagem dimensional</li><li><img class="ico" src="assets/logos/soc.svg" alt="" width="22" height="22" loading="lazy">SOC</li><li><img class="ico" src="assets/logos/hse-it.svg" alt="" width="22" height="22" loading="lazy">HSE-IT</li></ul><p class="note">Versão de portfólio, com dados 100% fictícios e sem dados de empresa.</p><div class="acts"><span class="lbl">Painel interativo</span><a class="btn p" href="https://app.powerbi.com/view?r=eyJrIjoiMDNmZGI0OTAtM2Y1ZC00MmNjLTg3N2MtZjg3YWQ4ZWYwNzljIiwidCI6IjU3MGE5MzFhLTEwMWYtNGJkYy04ZjE3LTRiMzEwMTE5MjU3MyJ9" data-pbi target="_blank" rel="noopener">Abrir o dashboard</a></div>
+<div class="fr" hidden></div>
+</article>
+<article class="case" style="--a:#0B6E75" aria-labelledby="c1"><span class="tag t-f">Dados fictícios</span><h3 id="c1">Ecossistema de Governança de SST</h3><h4>Problema</h4><p>A gestão de saúde ocupacional ficava presa em relatórios estáticos do SOC, cada um mostrando um pedaço: convocação de exames, afastamentos, eSocial, laudos das clínicas. Faltava um quadro único da saúde e segurança da empresa: quanto está vencido e há quanto tempo, quanto isso pode custar em multa, onde o absenteísmo é crônico e quais clínicas atrasam os laudos. E, mesmo quando alguém via o problema, nada garantia que o responsável fosse acionado.</p><h4>O que construí</h4><p>Duas camadas sobre os mesmos dados. Um painel executivo em Power BI, com 4 tabelas fato, 4 dimensões e mais de 54 medidas DAX, que cobre visão geral, conformidade legal, absenteísmo, SLA das credenciadas, perfil epidemiológico e risco financeiro. E três automações em n8n com agente de IA:</p><ul class="pts"><li>Régua de cobrança por atraso de ASO, escalonada por faixa de atraso, com exposição simulada a multa do eSocial (eventos S-2220 e S-2240).</li><li>Radar de absenteísmo: triagem semanal de recorrência de afastamentos pelo Fator de Bradford (S² × D), com apoio de IA para a entrevista de retorno ao trabalho.</li><li>Régua de SLA das credenciadas: auditoria diária de laudos pendentes e de lacunas de cobertura regional.</li></ul><h4>O que entrega</h4><p>Transforma o sistema de registro em sistema de ação. A automação identifica a situação crítica, aplica a regra de negócio, aciona o responsável por e-mail, escala os casos críticos até a diretoria, abre casos para o SESMT e registra cada ação em log de auditoria. Para a diretoria, traduz pendência operacional em risco financeiro estimado.</p><ul class="chips"><li><img class="ico" src="assets/logos/power-bi.svg" alt="" width="22" height="22" loading="lazy">Power BI</li><li><img class="ico" src="assets/logos/dax.svg" alt="" width="22" height="22" loading="lazy">DAX</li><li><img class="ico" src="assets/logos/n8n.svg" alt="" width="22" height="22" loading="lazy">n8n</li><li><img class="ico" src="assets/logos/agente-de-ia.svg" alt="" width="22" height="22" loading="lazy">Agente de IA</li><li><img class="ico" src="assets/logos/soc.svg" alt="" width="22" height="22" loading="lazy">SOC</li></ul><p class="note">A estrutura das telas do SOC aparece só como referência da origem dos dados, que são todos fictícios.</p><div class="acts"><span class="lbl">Painel interativo</span><a class="btn p" href="https://app.powerbi.com/view?r=eyJrIjoiYTg5OTBmYTAtMWI4ZS00Mzk2LTliYWItYjU3ZWU4ZTkxN2UyIiwidCI6IjU3MGE5MzFhLTEwMWYtNGJkYy04ZjE3LTRiMzEwMTE5MjU3MyJ9" data-pbi target="_blank" rel="noopener">Abrir o dashboard</a></div>
+<div class="acts"><span class="lbl">Vídeos explicativos (7)</span><a class="btn s" href="https://www.youtube.com/watch?v=fa9QZRB7pW0" data-v="fa9QZRB7pW0" target="_blank" rel="noopener">Visão geral</a><a class="btn s" href="https://www.youtube.com/watch?v=T-hyK4JQ7gs" data-v="T-hyK4JQ7gs" target="_blank" rel="noopener">Régua de ASO</a><a class="btn s" href="https://www.youtube.com/watch?v=ydhN1M-Njl0" data-v="ydhN1M-Njl0" target="_blank" rel="noopener">Absenteísmo e Bradford</a><a class="btn s" href="https://www.youtube.com/watch?v=za7XqCantwQ" data-v="za7XqCantwQ" target="_blank" rel="noopener">SLA das credenciadas</a><a class="btn s" href="https://www.youtube.com/watch?v=njVGPM5gqwE" data-v="njVGPM5gqwE" target="_blank" rel="noopener">Perfil epidemiológico</a><a class="btn s" href="https://www.youtube.com/watch?v=Un_abKc-8gM" data-v="Un_abKc-8gM" target="_blank" rel="noopener">Multas do eSocial</a><a class="btn s" href="https://www.youtube.com/watch?v=le85n_fnWz8" data-v="le85n_fnWz8" target="_blank" rel="noopener">Governança e automação</a></div>
+<div class="fr" hidden></div>
+</article>
+<article class="case" style="--a:#5B3FA0" aria-labelledby="c3"><span class="tag t-f">Dados fictícios</span><h3 id="c3">AgendaSST.AI</h3><h4>Problema</h4><p>O agendamento de exames ocupacionais vive no WhatsApp e no e-mail. Mensagens se perdem, várias pessoas conferem planilhas e cada reserva digitada à mão é uma chance de erro humano, como um CPF trocado. Sem registro estruturado, ninguém mede prazo (SLA), e o tempo da equipe vai embora em tarefa repetitiva. O mesmo gargalo existe em qualquer operação que agenda por conversa.</p><h4>O que construí</h4><p>Um ecossistema orientado a eventos em n8n. Um agente de IA (LangChain e GPT-4.1 mini) interpreta o pedido em linguagem natural, recebido por WhatsApp, via Evolution API, ou por e-mail, consulta a disponibilidade e executa o agendamento. Um segundo fluxo processa os ASOs assinados, identificados pela convenção de nome do arquivo, atualiza o status e dispara a confirmação por mais de um canal. Os dados ficam em PostgreSQL, com Docker no ambiente local, e a camada de BI usa um modelo com relacionamento ativo e inativo (USERELATIONSHIP) para separar a data da solicitação da data de execução.</p><h4>O que entrega</h4><p>Tira o agendamento da conversa solta e leva para um registro. O pedido vira agendamento sem digitação manual, a equipe ganha tempo e a gestão passa a medir SLA, funil de conversão da IA e o ganho financeiro frente ao custo do atendimento manual (estimativa simulada).</p><h4>O que o dashboard mostra</h4><ul class="pts"><li>Visão Geral da Automação: como a automação funciona, total de agendamentos e volume de interações.</li><li>Performance Operacional e Eficiência: desempenho do agente e tempo de resposta humana depois de um alerta de problema.</li><li>Gestão Financeira e ROI: o ganho calculado por agendamento.</li></ul><ul class="chips"><li><img class="ico" src="assets/logos/n8n.svg" alt="" width="22" height="22" loading="lazy">n8n</li><li><img class="ico" src="assets/logos/langchain.svg" alt="" width="22" height="22" loading="lazy">LangChain</li><li><img class="ico" src="assets/logos/openai.svg" alt="" width="22" height="22" loading="lazy">GPT-4.1 mini</li><li><img class="ico" src="assets/logos/evolution-api.svg" alt="" width="22" height="22" loading="lazy">Evolution API</li><li><img class="ico" src="assets/logos/postgresql.svg" alt="" width="22" height="22" loading="lazy">PostgreSQL</li><li><img class="ico" src="assets/logos/docker.svg" alt="" width="22" height="22" loading="lazy">Docker</li><li><img class="ico" src="assets/logos/power-bi.svg" alt="" width="22" height="22" loading="lazy">Power BI</li></ul><div class="acts"><span class="lbl">Painel interativo</span><a class="btn p" href="https://app.powerbi.com/view?r=eyJrIjoiZTBjMTA0NzktMjM4ZC00MTMxLWFlYWUtZTg4Zjc3OGZlZTExIiwidCI6IjU3MGE5MzFhLTEwMWYtNGJkYy04ZjE3LTRiMzEwMTE5MjU3MyJ9" data-pbi target="_blank" rel="noopener">Abrir o dashboard</a></div>
+<div class="acts"><span class="lbl">Vídeo explicativo</span><a class="btn s" href="https://www.youtube.com/watch?v=dZum2oeQPL8" data-v="dZum2oeQPL8" target="_blank" rel="noopener">Fluxo de automação no n8n</a></div>
+<div class="fr" hidden></div>
+</article>
+<article class="case" style="--a:#1C5F99" aria-labelledby="c4"><span class="tag t-r">Projeto real</span><h3 id="c4">Projeto EKÓ, Palavra Preta</h3><h4>Problema</h4><p>Uma iniciativa de impacto social não tinha dados consolidados para comprovar alcance e representatividade em editais e na captação de recursos. A comunicação com cada participante era manual e o impacto, difícil de medir.</p><h4>O que construí</h4><p>Um fluxo de ponta a ponta, pensado como uma régua de relacionamento: o participante preenche um formulário por QR code, o n8n recebe as respostas, um agente de IA (Groq) escreve uma comunicação personalizada para o perfil de cada pessoa e uma cartilha educativa chega por Gmail em menos de 15 minutos, de forma automatizada. As respostas consolidadas alimentam um painel em Power BI.</p><h4>O que entrega</h4><p>Comunicação personalizada em escala e medição de satisfação (NPS, Clima Emocional e Representatividade), com indicadores prontos para relatórios, editais e prestação de contas.</p><ul class="chips"><li><img class="ico" src="assets/logos/n8n.svg" alt="" width="22" height="22" loading="lazy">n8n</li><li><img class="ico" src="assets/logos/groq.svg" alt="" width="22" height="22" loading="lazy">Agente de IA (Groq)</li><li><img class="ico" src="assets/logos/gmail.svg" alt="" width="22" height="22" loading="lazy">Gmail API</li><li><img class="ico" src="assets/logos/power-bi.svg" alt="" width="22" height="22" loading="lazy">Power BI</li><li><img class="ico" src="assets/logos/nps.svg" alt="" width="22" height="22" loading="lazy">NPS</li></ul><p class="note">Projeto real, feito com autorização da iniciativa. O painel mostra indicadores agregados.</p><div class="acts"><span class="lbl">Painel interativo</span><a class="btn p" href="https://app.powerbi.com/view?r=eyJrIjoiYzUwNmY0ZmItNDcwMC00M2NmLWJlMjItZTMzYmQxODZjNzJjIiwidCI6IjU3MGE5MzFhLTEwMWYtNGJkYy04ZjE3LTRiMzEwMTE5MjU3MyJ9" data-pbi target="_blank" rel="noopener">Abrir o painel demográfico</a></div>
+<div class="acts"><span class="lbl">Vídeo explicativo</span><a class="btn s" href="https://www.youtube.com/watch?v=wMwexjyQhlM" data-v="wMwexjyQhlM" target="_blank" rel="noopener">Fluxo de automação no n8n</a></div>
+<div class="fr" hidden></div>
+</article>
+<article class="case" style="--a:#3F5560" aria-labelledby="c5"><span class="tag t-d">Em desenvolvimento</span><h3 id="c5">FluxoCerto.AI</h3><h4>Problema</h4><p>Gestores de marketing e operação de e-commerce costumam decidir sem CRM consolidado: campanha de reativação disparada para todos, produto de baixo giro parado e atraso de entrega que ninguém trata como sinal de perda do cliente. No dataset público Olist, por exemplo, só 3,2% dos pedidos entregues geram recompra.</p><h4>O que estou construindo</h4><p>Uma ferramenta de analytics de marketing e CRM sobre dados de um marketplace. O banco em PostgreSQL (Supabase) tem 9 tabelas e 6 views em SQL: segmentação RFM, curva ABC, giro por categoria, atraso de entrega, atrito x recompra e CAC/LTV simulado por canal. Uma automação semanal em n8n cruza produtos parados com clientes compatíveis, um agente de IA justifica cada recomendação e cada rodada fica registrada em histórico.</p><h4>Em que ponto está</h4><p>Banco de dados e automação concluídos; numa execução validada, a rotina gerou 973 combinações produto e cliente. O painel em Power BI está em construção. É o projeto em que pratico SQL ao lado do curso, com apoio de LLM e de engenharia de prompt.</p><ul class="chips"><li><img class="ico" src="assets/logos/postgresql.svg" alt="" width="22" height="22" loading="lazy">PostgreSQL</li><li><img class="ico" src="assets/logos/sql.svg" alt="" width="22" height="22" loading="lazy">SQL</li><li><img class="ico" src="assets/logos/n8n.svg" alt="" width="22" height="22" loading="lazy">n8n</li><li><img class="ico" src="assets/logos/agente-de-ia.svg" alt="" width="22" height="22" loading="lazy">Agente de IA</li><li><img class="ico" src="assets/logos/rfm.svg" alt="" width="22" height="22" loading="lazy">RFM</li><li><img class="ico" src="assets/logos/power-bi.svg" alt="" width="22" height="22" loading="lazy">Power BI</li></ul><p class="note">O giro é um indicador aproximado de velocidade de venda, e o CAC/LTV é uma camada simulada, pois o Olist não traz dados de mídia paga.</p></article>
+</div>
+</div></section>
+
+<section id="competencias"><div class="w"><h2>Competências</h2><p class="sub">Cada competência mostra onde foi usada e em que nível me enquadro, para que você possa checar. O nível é uma autoavaliação, e a evidência está nos projetos e na minha história.</p><div class="grp grp2"><div><h3>Business Intelligence</h3><ul class="lv"><li><b><span>Power BI e DAX</span><img class="ico ico-r" src="assets/logos/power-bi.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Intermediário</span>Painéis completos, do requisito à entrega, no GRS e na 3Cliques. Mais de 54 medidas DAX em um projeto e mais de 20 em outro. Curso da Data Science Academy para aprofundar.</li><li><b><span>Power Query e modelagem dimensional</span><img class="ico ico-r" src="assets/logos/modelagem-dimensional.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Trabalho e projetos</span>Esquema estrela com 1 fato e 8 dimensões, e modelo com 4 fatos e 4 dimensões, com relacionamentos ativos e inativos.</li><li><b><span>KPIs e dashboards de gestão</span><img class="ico ico-r" src="assets/logos/dashboards.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Trabalho e projetos</span>Exames e absenteísmo, riscos psicossociais, produtividade, tempo de resposta e SLA.</li><li><b><span>Excel</span><img class="ico ico-r" src="assets/logos/excel.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Intermediário</span>Certificado de Excel 2016 Intermediário e uso diário no trabalho. Curso de reforço em andamento.</li></ul></div><div><h3>Automação e IA</h3><ul class="lv"><li><b><span>n8n</span><img class="ico ico-r" src="assets/logos/n8n.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Básico a intermediário</span>Fluxos com agentes de IA, agendamento, réguas de cobrança e triagem, nos projetos autorais.</li><li><b><span>Agentes de IA e Engenharia de Prompt</span><img class="ico ico-r" src="assets/logos/agente-de-ia.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Curso concluído</span>Aplicação nos agentes dos projetos: instruções de sistema, saída estruturada e tomada de decisão.</li><li><b><span>Integração de APIs e webhooks</span><img class="ico ico-r" src="assets/logos/api.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Projetos</span>Evolution API (WhatsApp), Gmail API e Google Drive API.</li><li><b><span>PostgreSQL e SQL</span><img class="ico ico-r" src="assets/logos/postgresql.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Projetos e formação</span>Banco e views no FluxoCerto.AI e no AgendaSST.AI. Curso de 58 horas em andamento.</li></ul></div><div><h3>Domínio de SST</h3><ul class="lv"><li><b><span>SOC (software de gestão de saúde e segurança do trabalho)</span><img class="ico ico-r" src="assets/logos/soc.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Uso no trabalho</span>Extração e leitura de telas de convocação, exames, afastamentos e eSocial.</li><li><b><span>Exames e conformidade</span><img class="ico ico-r" src="assets/logos/conformidade-sst.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Trabalho e projetos</span>PCMSO, LTCAT e ASO, com controle de vigência e atrasos.</li><li><b><span>eSocial e NR-01</span><img class="ico ico-r" src="assets/logos/esocial.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Trabalho e projetos</span>Eventos S-2220 e S-2240, e riscos psicossociais no GRO da NR-1.</li><li><b><span>Absenteísmo</span><img class="ico ico-r" src="assets/logos/absenteismo.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Projetos</span>Fator de Bradford (S² × D) e perfil epidemiológico por grupo de CID.</li></ul></div><div><h3>Operações e e-commerce</h3><ul class="lv"><li><b><span>Backoffice e atendimento</span><img class="ico ico-r" src="assets/logos/octadesk.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Trabalho</span>Estruturação de processos, SLAs internos e CRM Octadesk (filas e regras de distribuição).</li><li><b><span>Logística e estoque</span><img class="ico ico-r" src="assets/logos/mabeng.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Trabalho</span>ERP Mabeng, controle de estoque e auditoria de relatórios de transportadora.</li><li><b><span>Analytics de marketing e CRM</span><img class="ico ico-r" src="assets/logos/analytics-crm.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Em construção</span>RFM, curva ABC, atraso de entrega e recompra no FluxoCerto.AI.</li></ul></div><div><h3>Negócio e pessoas</h3><ul class="lv"><li><b><span>Levantamento de requisitos</span><img class="ico ico-r" src="assets/logos/requisitos.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Trabalho</span>Conversa direta com gestores até a entrega do painel.</li><li><b><span>Comunicação com a diretoria</span><img class="ico ico-r" src="assets/logos/comunicacao.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Trabalho</span>Reuniões entre áreas e apresentação de propostas técnicas.</li><li><b><span>Coordenação de equipe</span><img class="ico ico-r" src="assets/logos/lideranca-de-equipe.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Trabalho</span>Equipe de 6 a 8 analistas de suporte, com stand-ups, treinamentos e onboarding.</li><li><b><span>Aprendizado contínuo</span><img class="ico ico-r" src="assets/logos/aprendizado-continuo.svg" alt="" width="22" height="22" loading="lazy"></b><span class="nv">Em andamento</span>Trilha de estudos, com um projeto para cada formação.</li></ul></div></div></div></section>
+
+<section id="certificacoes"><div class="w"><h2>Certificações e trilha de estudos</h2><h3 class="g">Certificações concluídas</h3><div class="crl"><details class="crs"><summary class="sm"><img class="ico" src="assets/logos/udemy.svg" alt="" width="22" height="22" loading="lazy"><span><strong>Engenharia de Prompt: ChatGPT, Gemini, Meta AI, Grok e mais</strong><small>Udemy, 9,5 h, 10/2026</small></span><em>Ver o conteúdo</em></summary><div class="in"><p>O que aprendi, nas 10 seções do curso:</p><ul class="pts"><li>Fundamentos: o que é prompt, LLMs x SLMs, System Prompt e fatores que afetam a resposta.</li><li>Ferramentas: ChatGPT, Gemini, Claude, Copilot, Grok, DeepSeek, Qwen, Meta AI e Cohere.</li><li>Princípios universais: tríade CCR (clareza, contexto e restrições) e 6 categorias de prompts.</li><li>Componentes: Zero, One e Few-Shot, Chain of Thought, personas, cenários, estilo e tom.</li><li>Sintaxe: delimitadores (aspas triplas, tags XML, Markdown), variáveis e marcador de fim.</li><li>Frameworks: RTF, CREATE, PACEF e PASECT, e como criar o próprio com metaprompting.</li><li>Alucinações: tipos e causas, grounding, restrição de fontes e verificação.</li><li>Avaliação: checklist de auto-auditoria, meta-prompt avaliador e otimizadores de prompt.</li><li>Comparação de modelos: LMArena, com teste cego, lado a lado e rankings.</li><li>Boas práticas: CoT com Few-Shot, comandos positivos, autocrítica e múltiplas perspectivas.</li></ul></div></details><div class="crs"><div class="sm"><img class="ico" src="assets/logos/fundacao-bradesco.svg" alt="" width="22" height="22" loading="lazy"><span><strong>Microsoft Excel 2016 Intermediário</strong><small>Fundação Bradesco, 03/2022</small></span></div></div></div><h3 class="g">Minha trilha de estudos</h3><p class="sub">Aprendizado contínuo: a cada formação que concluo, desenvolvo um projeto para testar o conhecimento e transformá-lo em solução útil. Estes cursos ainda não têm certificado. Clique em um curso para ver o que ele cobre.</p><div class="crl"><details class="crs"><summary class="sm"><img class="ico" src="assets/logos/udemy.svg" alt="" width="22" height="22" loading="lazy"><span><strong>O Curso Completo de Banco de Dados e SQL</strong><small>Udemy, 58 h</small></span><em>Ver o conteúdo</em></summary><div class="in"><p>O que o curso cobre:</p><ul class="pts"><li>Modelagem relacional: formas normais, cardinalidade, chaves e relacionamentos 1x1, 1xN e NxN.</li><li>SQL em MySQL, SQL Server e Oracle: seleção, projeção, junções, agregações, subconsultas e funções de data.</li><li>DML e DDL, constraints, views e dicionário de dados.</li><li>Programação em banco: procedures, functions, triggers e cursores (T-SQL e PL/SQL).</li><li>Ambientes OLTP e OLAP, Data Warehouse e introdução a Big Data e Data Science.</li></ul></div></details><details class="crs"><summary class="sm"><img class="ico" src="assets/logos/python.svg" alt="" width="22" height="22" loading="lazy"><span><strong>Fundamentos de Linguagem Python, do Básico a Aplicações de IA</strong><small>Data Science Academy, 96 h</small></span><em>Ver o conteúdo</em></summary><div class="in"><p>O que o curso cobre:</p><ul class="pts"><li>Python do zero: tipos, estruturas de dados, laços, funções e orientação a objetos.</li><li>NumPy, Pandas e Statsmodels para análise de dados.</li><li>Machine Learning com Scikit-Learn e Deep Learning com PyTorch.</li><li>IA generativa: LLMs, RAG e LangChain, com 10 mini-projetos e dashboard em Streamlit.</li></ul></div></details><details class="crs"><summary class="sm"><img class="ico" src="assets/logos/udemy.svg" alt="" width="22" height="22" loading="lazy"><span><strong>Desenvolvimento Web Completo, 20 Cursos + 20 Projetos</strong><small>Udemy, 126 h</small></span><em>Ver o conteúdo</em></summary><div class="in"><p>O que o curso cobre:</p><ul class="pts"><li>HTML5, CSS3 e Bootstrap 5, com JavaScript moderno (ES6 ao ES14).</li><li>PHP com orientação a objetos, MySQL, PDO, Ajax e jQuery.</li><li>Padrão MVC, APIs com Slim Framework, WordPress e Ionic.</li><li>20 projetos, como loja virtual e app mobile.</li></ul></div></details><details class="crs"><summary class="sm"><img class="ico" src="assets/logos/udemy.svg" alt="" width="22" height="22" loading="lazy"><span><strong>Algoritmos e Lógica de Programação</strong><small>Udemy, 30,5 h</small></span><em>Ver o conteúdo</em></summary><div class="in"><p>O que o curso cobre:</p><ul class="pts"><li>Variáveis, entrada e saída, condicionais, repetições, vetores, matrizes e depuração.</li><li>Ensino em Portugol (VisualG) e prática em C, C++, Python, C# e Java.</li><li>Mais de 50 exercícios com correção.</li></ul></div></details><details class="crs"><summary class="sm"><img class="ico" src="assets/logos/udemy.svg" alt="" width="22" height="22" loading="lazy"><span><strong>Curso Web API ASP.NET Core Essencial (.NET 8 e .NET 9)</strong><small>Udemy, 47,5 h</small></span><em>Ver o conteúdo</em></summary><div class="in"><p>O que o curso cobre:</p><ul class="pts"><li>REST, HTTP, JSON, roteamento, validação, paginação e programação assíncrona.</li><li>Autenticação JWT, CORS, cache, versionamento e documentação com Swagger.</li><li>Repository, Unit of Work, AutoMapper e Entity Framework Core (Code-First).</li><li>Consumo da API por Angular, Windows Forms, OData e GraphQL, e introdução a microsserviços.</li></ul></div></details><details class="crs"><summary class="sm"><img class="ico" src="assets/logos/udemy.svg" alt="" width="22" height="22" loading="lazy"><span><strong>C# Completo, Programação Orientada a Objetos + Projetos</strong><small>Udemy, 38 h</small></span><em>Ver o conteúdo</em></summary><div class="in"><p>O que o curso cobre:</p><ul class="pts"><li>Classes, herança, interfaces e polimorfismo.</li><li>Princípios SOLID e padrões de projeto.</li><li>Generics, expressões lambda, delegates e LINQ, aplicados em projetos.</li></ul></div></details><details class="crs"><summary class="sm"><img class="ico" src="assets/logos/excel.svg" alt="" width="22" height="22" loading="lazy"><span><strong>Excel do Básico ao Avançado, Macro e VBA + Power BI</strong><small>Udemy</small></span><em>Ver o conteúdo</em></summary><div class="in"><p>Reforço e atualização: aprofundar o Excel que já uso no trabalho.</p><ul class="pts"><li>Excel do básico ao avançado: formatação, gráficos, tabela dinâmica, Power Query e fórmulas avançadas.</li><li>VBA, com mais de 20 projetos práticos de automação.</li><li>Power BI: ETL, DAX e dashboards, com integração a Python e R.</li></ul></div></details><details class="crs"><summary class="sm"><img class="ico" src="assets/logos/power-bi.svg" alt="" width="22" height="22" loading="lazy"><span><strong>Microsoft Power BI para Business Intelligence e Data Science</strong><small>Data Science Academy, 72 h</small></span><em>Ver o conteúdo</em></summary><div class="in"><p>Aprofundamento sobre a prática de Power BI.</p><ul class="pts"><li>Primeiros passos, modelagem e DAX.</li><li>Análises por área: marketing, comercial, RH, logística, financeiro e contábil.</li><li>Machine Learning no Power BI: segmentação de clientes e detecção de anomalias; séries temporais.</li><li>Integração com Python e R e estudo de caso com Power Platform.</li></ul></div></details><details class="crs"><summary class="sm"><img class="ico" src="assets/logos/n8n.svg" alt="" width="22" height="22" loading="lazy"><span><strong>Formação Automação com Inteligência Artificial 2026 com n8n</strong><small>Udemy</small></span><em>Ver o conteúdo</em></summary><div class="in"><p>Aprofundamento sobre os projetos em n8n.</p><ul class="pts"><li>Fundamentos: nós, gatilhos, condições, loops, subworkflows, JSON e expressões.</li><li>Instalação local, na nuvem, em VPS e com Docker.</li><li>Agentes de IA com OpenAI e Groq, RAG, sistemas multiagentes, MCP e human-in-the-loop.</li><li>Integrações: WhatsApp (Evolution API), Supabase, Telegram, Slack, Google, NocoDB e Airtable.</li><li>APIs REST, HTTP, CRUD, web scraping e guardrails.</li></ul></div></details></div><p class="note">Só aparece como concluído o curso que tem certificado emitido.</p></div></section>
+
+<section id="contato"><div class="w">
+<h2>Vamos conversar</h2>
+<p class="sub">Escreva por e-mail ou LinkedIn. Respondo também pelo WhatsApp.</p>
+<div class="btns">
+<a class="btn p" href="mailto:vitormont26@gmail.com">vitormont26@gmail.com</a>
+<a class="btn s" href="https://www.linkedin.com/in/victor-monteiro-6816b5192/" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn s" href="https://wa.me/5511991663943" target="_blank" rel="noopener">WhatsApp</a>
+</div></div></section>
+</main>
+
+<footer><div class="w">
+<p>Atualizado em 10/2026. Projetos autorais com dados fictícios, exceto o EKÓ. As telas do SOC aparecem apenas como referência de estrutura.</p>
+<p>Power BI, Excel e Microsoft são marcas da Microsoft Corporation. Os nomes das ferramentas aparecem só para identificá-las, sem vínculo ou endosso.</p>
+<p>&copy; 2026 Victor Hugo Monteiro</p>
+</div></footer>
+
+<script>
+document.addEventListener("error",function(e){var i=e.target;if(!i||!i.classList||!i.classList.contains("ico"))return;var s=i.getAttribute("src")||"";if(/\.svg$/.test(s)){i.src=s.replace(/\.svg$/,".png")}else{i.removeAttribute("src");i.classList.add("ph")}},true);
+document.addEventListener("click",function(e){
+var b=e.target.closest("a[data-pbi],a[data-v]");if(!b)return;
+e.preventDefault();
+var box=b.closest("article").querySelector(".fr"),f=document.createElement("iframe");
+f.title=b.dataset.v?"Vídeo: "+b.textContent:"Painel em Power BI";
+f.src=b.dataset.v?"https://www.youtube-nocookie.com/embed/"+b.dataset.v:b.href;
+f.allowFullscreen=true;f.setAttribute("loading","lazy");
+if(b.dataset.v)f.allow="picture-in-picture; encrypted-media";
+box.innerHTML="";box.appendChild(f);box.hidden=false;
+box.scrollIntoView({block:"nearest",behavior:"smooth"});
+});
+</script>
 </body>
 </html>
