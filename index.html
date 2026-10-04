@@ -121,6 +121,20 @@ details[open] .sm em{visibility:hidden}
 .pc::after{content:"";position:absolute;right:8px;top:100%;border:5px solid transparent;border-top-color:var(--ink)}
 @keyframes grow{from{width:0}}
 @media(prefers-reduced-motion:reduce){.fl{animation:none}}
+
+.hero img{border-radius:50%;border:4px solid #fff;box-shadow:0 0 0 2px var(--teal),0 12px 28px rgba(16,36,46,.18)}
+.chap.withfig{max-width:none;display:grid;gap:22px;align-items:center}
+@media(min-width:700px){.chap.withfig{grid-template-columns:1fr 190px}}
+.evt{margin:0}.evt img{display:block;width:190px;height:285px;object-fit:cover;object-position:center top;border-radius:95px 95px 14px 14px;border:4px solid #fff;box-shadow:0 0 0 2px var(--indigo),0 12px 28px rgba(16,36,46,.16)}
+.evt img.ph{background:#E3EAEC}
+/* Tamanho padrão dos logos: caixa fixa por contexto; a imagem se ajusta com object-fit */
+.chips .ico{width:28px;height:28px}
+.ico-r{width:36px;height:36px}
+.sn .ico{width:30px;height:30px}
+.sm .ico{width:44px;height:44px;margin-right:16px}
+/* AJUSTE FINO: logos com muita margem interna na imagem. Aumente ou reduza o número (1 = sem zoom). Se recortar a imagem rente ao desenho, apague a regra. */
+.ico[src*="/udemy."],.ico[src*="/power-bi."],.ico[src*="/python."],.ico[src*="/fundacao-bradesco."],.ico[src*="/mabeng."],.ico[src*="/octadesk."],.ico[src*="/soc."],.ico[src*="/postgresql."]{transform:scale(1.4)}
+
 </style>
 </head>
 <body>
@@ -153,10 +167,9 @@ details[open] .sm em{visibility:hidden}
 <h2>Minha história com dados</h2>
 <p class="sub">Sempre enxerguei o problema por trás do processo. Em cada empresa por onde passei o caminho foi o mesmo: entender a dor, estruturar o dado, entregar o indicador e, quando possível, automatizar a ação.</p>
 <div class="story">
-<div class="chap">
-<h3>Onde aprendi a dor do dado manual</h3>
+<div class="chap withfig"><div><h3>Onde aprendi a dor do dado manual</h3>
 <p>Comecei em SST em funções administrativas, onde dados de campo e relatórios chegavam em papel e planilha. Ali vi de perto o quanto uma decisão depende de o dado chegar certo, e foi ali que conheci o Power BI.</p>
-</div>
+</div><figure class="evt"><img src="assets/foto-evento.jpg" width="190" height="285" alt="Victor Hugo Monteiro em um evento" loading="lazy" onerror="this.removeAttribute('src');this.classList.add('ph')"></figure></div>
 <div class="chap">
 <h3>3Cliques: processo, equipe e indicador</h3>
 <p class="when">06/2024 a 03/2025, Analista de Backoffice</p>
